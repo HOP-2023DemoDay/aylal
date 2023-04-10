@@ -1,28 +1,36 @@
 import React from "react";
 import Landing1 from "../img/landing1.png";
 import Landing2 from "../img/landing2.svg";
+import Header from "../components/Header";
+import CompanyCard from "../components/CompanyCard";
+import Hutulbur from "../components/Hutulbur";
 import clsx from "clsx";
 
 const style = {
-  too: "text-GreenText font-Poppins text-5xl text-bold     sm:text-[4xl]",
+  too: "text-GreenText font-Poppins text-5xl text-bold sm:text-[4xl]",
   TooText: "text-DarkText font-Poppins text-[16px]",
-  jijigTit: "text-GreenText font-Poppins text-[16px]  w-screen flex justify-center",
-  TomTit: "text-DarkText font-Poppins text-5xl font-bold  w-screen flex justify-center",
+  jijigTit:
+    "text-GreenText font-Poppins text-[16px] w-screen flex justify-center",
+  TomTit:
+    "text-DarkText font-Poppins text-5xl font-bold w-screen flex justify-center",
 };
 
 const LandingPage = () => {
   return (
     <React.Fragment>
+      <div className="absolute mt-[-8px]">
+        <Header />
+      </div>
       <img
         src={Landing1}
         alt="img"
         className="w-screen h-screen mt-[-3.5vh] bg-repeat"
       />
       <div className="mt-[-55vh] w-[30vw] ml-[35vw]">
-        <p className="text-white font-Poppins text-[46px]">
+        <p className="text-white font-Poppins text-[26px] sm:text-[46px]">
           Explore the world with a smile
         </p>
-        <p className="text-white font-Poppins text-[16px] text-center">
+        <p className="text-white font-Poppins text-[10px] text-center sm:text-[16px] ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
           purus sit amet luctus venenatis, lectus magna fringilla urna,
           porttitor rhoncus dolor purus non enim praesent elementum facilisis
@@ -30,15 +38,19 @@ const LandingPage = () => {
         </p>
       </div>
 
-      <img src={Landing2} alt="img" className=" w-[34vw] mt-[50vh] ml-[10vw]" />
+      <img
+        src={Landing2}
+        alt="img"
+        className=" w-[34vw] mt-[50vh] ml-[10vw]  min:absolute  "
+      />
       <div className="w-[40vw] ml-[50vw] mt-[-40vh]">
         <p className="text-GreenText font-Poppins text-[16px]">
           Travelers Point
         </p>
-        <p className="font-Poppins text-5xl">
+        <p className="font-Poppins text-4xl sm:text-5xl">
           We help to find your dream place
         </p>
-        <p className="font-Poppins text-[16px]">
+        <p className="font-Poppins text-[10px] sm:text-[16px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
           purus sit amet luctus venenatis, lectus magna fringilla urna,
           porttitor rhoncus dolor purus non enim praesent elementum facilisis
@@ -70,11 +82,30 @@ const LandingPage = () => {
       <div className="mt-[20vh]">
         <p className={clsx(style.jijigTit)}>top destination</p>
         <p className={clsx(style.TomTit)}>Discover your love</p>
+        <div className="flex flex-wrap w-[80vw] h-[110vh] mx-[10vw] mt-[3vh] mb-[-20vh]">
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
+        </div>
       </div>
 
       <div className="mt-[20vh]">
         <p className={clsx(style.jijigTit)}>Testimonial</p>
         <p className={clsx(style.TomTit)}>What they say about us</p>
+      </div>
+      <div className="flex flex-wrap w-[82vw] h-[80vh] mx-[8vw] mt-[4vh]">
+        <Hutulbur />
+        <Hutulbur />
+        <Hutulbur />
+        <Hutulbur />
+        <Hutulbur />
+        <Hutulbur />
+        <Hutulbur />
+        <Hutulbur />
+        <Hutulbur />
       </div>
     </React.Fragment>
   );
