@@ -3,6 +3,9 @@ import { useState } from "react";
 import arrow from "../img/arrow.svg";
 import Lottie from "react-lottie";
 import * as animationData from "../img/sign.json";
+import showpng from "../img/show.svg";
+import hidepng from "../img/hide.svg";
+import { Link } from "react-router-dom";
 
 export const Sign = () => {
   const defaultOptions = {
@@ -15,18 +18,23 @@ export const Sign = () => {
   };
 
   const [person, setPerson] = useState(true);
+  const [signin, setSignin] = useState(true);
+  const [hide, setHide] = useState(false);
 
   return (
     <div className="w-screen h-screen flex justify-evenly items-center bg-[#F8F8F8]">
       <div className="w-auto h-[576px]">
-        <button className="rounded-full w-[40px] h-[40px] bg-[#295943] flex justify-center items-center">
-          <img src={arrow} className="w-[30px] h-[30px]" alt="" />
-        </button>
+        <Link
+          to="/Home"
+          className="rounded-full w-auto h-auto bg-transparent flex justify-center items-center"
+        >
+          <img src={arrow} className="w-[45px] h-[45px]" alt="" />
+        </Link>
       </div>
-      <div>
+      <div className="mt-[70px]">
         <Lottie
-          height={600}
-          width={600}
+          height={700}
+          width={700}
           options={defaultOptions}
           isClickToPauseDisabled={true}
         />
@@ -69,30 +77,74 @@ export const Sign = () => {
             </p>
           </button>
         </div>
-        <div className="w-[687px] h-[576px] content-evenly bg-white rounded-[24px] flex flex-col justify-evenly items-center">
-          <div className="flex">
-            <button className="w-[302px] h-[56px] opacity-50 bg-[#295943] rounded-l-[15px] text-white font-500 text-[25px]">
+        <div className="w-[687px] h-[576px] content-evenly bg-white rounded-[24px] flex flex-col justify-start gap-[20px] p-[30px] items-center ">
+          <div className="flex relative">
+            <button
+              className={`w-[302px] h-[56px] bg-[#295943] rounded-l-[15px] text-white font-500 text-[25px] ${
+                signin === true ? "opacity-50" : ""
+              }`}
+              onClick={() => setSignin(false)}
+            >
               Sign up
             </button>
-            <button className="w-[302px] h-[56px] bg-[#295943] rounded-r-[15px] text-white font-500 text-[25px]">
+            <button
+              className={`w-[302px] h-[56px] bg-[#295943] rounded-r-[15px] text-white font-500 text-[25px] ${
+                signin === true ? "" : "opacity-50"
+              }`}
+              onClick={() => setSignin(true)}
+            >
               Sign in
             </button>
           </div>
           <p className="font-500 text-[32px] text-[#295943]">Sign in</p>
           <div className="flex flex-col gap-7">
             <div className="flex flex-col items-start">
-              <p className="font-400 text-[16px] text-[#666666]">Email</p>
+              <p className="font-400 text-[16px] text-[#666666]" type="email">
+                Email
+              </p>
+              <input className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl" />
+            </div>
+            <div
+              className={`flex-col items-start ${
+                signin === true ? "hidden" : "flex"
+              }`}
+            >
+              <p className="font-400 text-[16px] text-[#666666]" type="text">
+                Username
+              </p>
               <input className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl" />
             </div>
             <div className="flex flex-col items-start">
-              <p className="font-400 text-[16px] text-[#666666]">Password</p>
-              <input className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl" />
+              <div className="flex w-full justify-between">
+                <p className="font-400 text-[16px] text-[#666666]">Password</p>
+                <button
+                  className="items-center gap-[5px] flex"
+                  onClick={() => setHide(!hide)}
+                >
+                  <img
+                    alt=""
+                    className="w-[16px] h-[16px]"
+                    src={hide === true ? showpng : hidepng}
+                  />
+                  <p className="font-400 text-[16px] text-[#666666]">
+                    {hide === true ? "Show" : "Hide"}
+                  </p>
+                </button>
+              </div>
+              <input
+                className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl"
+                type={hide === true ? "password" : "text"}
+              />
             </div>
             <button className="w-[459px] h-[56px] bg-[#43B97F] rounded-full font-400 text-white text-[25px] text-[#295943]">
               Sign in
             </button>
           </div>
-          <div className="flex justify-start items-center gap-3 w-[459px]">
+          <div
+            className={`justify-start items-center gap-3 w-[459px] ${
+              signin === false ? "hidden" : "flex"
+            }`}
+          >
             <input
               className="w-[24px] h-[24px] text-white accent-[#43B97F] bg-white rounded-full"
               type="checkbox"
