@@ -1,10 +1,11 @@
 import React from 'react'
+import Img from "../img/img1.svg"
 
 export const CompanyCard = () => {
   return (
     <div>
-        <div className="shadow-2xl w-[20vw] h-[51vh] rounded-[10px] ml-[5vw]">
-        <div className="h-[28vh] w-[20vw] bg-current rounded-t-lg"></div>
+        <div className="shadow-2xl w-[40vw] h-[51vh] rounded-[10px] ml-[5vw] sm:w-[20vw]">
+        <img className="h-[28vh] w-[20vw] bg-current rounded-t-lg" src={Img} alt="img" />
         <p className="font-Poppins text-[18px] capitalize text-Black font-semibold mx-[3vw] mt-[3vh]">The Golden Sands of Florida and clifornia{" "}</p>
         <p className="font-Poppins text-[15px] text-GrayText w-[16vw] mx-[3vw] my-[1vh] max-w-md ...">
           Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et donec

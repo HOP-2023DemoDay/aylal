@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      fontFamilys: {
+      fonts: {
         Poppins: "Poppins, sans-serif",
       },
       colors: {
@@ -14,8 +14,8 @@ module.exports = {
         Button: "#43B97F",
         Black: "#141414",
       },
-      boxShadows: {
-        'shadow1': '2px 3px 10px rgba(2, 2, 2, 2)',
+      images: {
+        'zur': "url('./src/img/zurag1.svg')",
       }
     },
   },

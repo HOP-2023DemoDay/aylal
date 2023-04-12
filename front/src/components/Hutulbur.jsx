@@ -1,10 +1,11 @@
 import React from "react";
+import Img2 from "../img/img2.svg"
 
 export const Hutulbur = () => {
   return (
     <div className="h-[18vh] w-[25vw] shadow-2xl flex flex-wrap ml-[2vw] rounded-[22px]">
 
-      <div className="h-[16vh] w-[8vw] mt-[1vh] bg-current rounded-lg ml-[0.5vw] rounded-[22px]"></div>
+      <img className="h-[16vh] w-[8vw] mt-[1vh] bg-current rounded-lg ml-[0.5vw] rounded-[22px]" src={Img2} alt="img2"  />
 
       <div className="w-[12vw] ml-[1vw] mt-[3vh]">
 

@@ -7,14 +7,17 @@ import Hutulbur from "../components/Hutulbur";
 import clsx from "clsx";
 
 const style = {
-  too: "text-GreenText font-Poppins text-5xl text-bold sm:text-[4xl]",
+  too: "text-GreenText font-Poppins text-1xl ml-[1vw] text-bold sm:text-[5xl]",
   TooText: "text-DarkText font-Poppins text-[16px]",
   jijigTit:
     "text-GreenText font-Poppins text-[16px] w-screen flex justify-center",
   TomTit:
-    "text-DarkText font-Poppins text-5xl font-bold w-screen flex justify-center",
+    "text-DarkText text-center font-Poppins  text-3xl sm:text-5xl font-bold w-screen flex justify-center",
 };
 
+const buttonClasses = {
+  default: 'bg-blue-500 sm:bg-black px-4 py-2 rounded-md text-white font-bold',
+ };
 const LandingPage = () => {
   return (
     <React.Fragment>
@@ -24,10 +27,10 @@ const LandingPage = () => {
       <img
         src={Landing1}
         alt="img"
-        className="w-screen h-screen mt-[-3.5vh] bg-repeat"
+        className="w-[100vw] h-[100vh] mt-[-3.5vh] bg-repeat"
       />
       <div className="mt-[-55vh] w-[30vw] ml-[35vw]">
-        <p className="text-white font-Poppins text-[26px] sm:text-[46px]">
+        <p className="text-white font-Poppins text-[26px] sm:text-[46px] text-center">
           Explore the world with a smile
         </p>
         <p className="text-white font-Poppins text-[10px] text-center sm:text-[16px] ">
@@ -47,7 +50,7 @@ const LandingPage = () => {
         <p className="text-GreenText font-Poppins text-[16px]">
           Travelers Point
         </p>
-        <p className="font-Poppins text-4xl sm:text-5xl">
+        <p className="font-Poppins text-1xl sm:text-5xl">
           We help to find your dream place
         </p>
         <p className="font-Poppins text-[10px] sm:text-[16px]">
@@ -107,6 +110,7 @@ const LandingPage = () => {
         <Hutulbur />
         <Hutulbur />
       </div>
+  <button className={clsx(buttonClasses.default)}>fretvtr2reds</button>
     </React.Fragment>
   );
 };
