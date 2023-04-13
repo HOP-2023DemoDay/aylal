@@ -31,7 +31,7 @@ export const Sign = () => {
           <img src={arrow} className="w-[45px] h-[45px]" alt="" />
         </Link>
       </div>
-      <div className="mt-[70px]">
+      <div className="mt-[70px] hidden xl:flex">
         <Lottie
           height={700}
           width={700}
