@@ -77,8 +77,14 @@ export const Sign = () => {
             </p>
           </button>
         </div>
-        <div className="w-[687px] h-[576px] content-evenly bg-white rounded-[24px] flex flex-col justify-start gap-[20px] p-[30px] items-center ">
-          <div className="flex relative">
+        <div
+          className={`w-[687px] h-[576px] content-evenly bg-white rounded-[24px] flex flex-col justify-start items-center ${
+            signin === false && person === false
+              ? "p-[15px] gap-0"
+              : "gap-[20px] p-[30px]"
+          }`}
+        >
+          <div className="flex">
             <button
               className={`w-[302px] h-[56px] bg-[#295943] rounded-l-[15px] text-white font-500 text-[25px] ${
                 signin === true ? "opacity-50" : ""
@@ -96,18 +102,46 @@ export const Sign = () => {
               Sign in
             </button>
           </div>
-          <p className="font-500 text-[32px] text-[#295943]">Sign in</p>
-          <div className="flex flex-col gap-7">
+          <p className="font-500 text-[32px] text-[#295943]">
+            {signin === true ? "Sign in" : "Sign up "}
+          </p>
+          <div
+            className={`flex flex-col ${
+              signin === false && person === false ? "gap-4" : "gap-7"
+            }`}
+          >
+            <div
+              className={`flex-col items-start ${
+                signin === false && person === false ? "flex" : "hidden"
+              }`}
+            >
+              <p className="font-400 text-[16px] text-[#666666]" type="email">
+                Company name
+              </p>
+              <input className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl" />
+            </div>
+            <div
+              className={`flex-col items-start ${
+                signin === false && person === false ? "flex" : "hidden"
+              }`}
+            >
+              <p className="font-400 text-[16px] text-[#666666]" type="email">
+                Ажлын чиг үүрэг
+              </p>
+              <input className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl" />
+            </div>
             <div className="flex flex-col items-start">
               <p className="font-400 text-[16px] text-[#666666]" type="email">
-                Email
+                {signin === false && person === false
+                  ? "Business email"
+                  : "Email"}
               </p>
               <input className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl" />
             </div>
             <div
               className={`flex-col items-start ${
                 signin === true ? "hidden" : "flex"
-              }`}
+              } ${signin === false && person === false ? "hidden" : "flex"}`}
             >
               <p className="font-400 text-[16px] text-[#666666]" type="text">
                 Username
@@ -137,7 +171,7 @@ export const Sign = () => {
               />
             </div>
             <button className="w-[459px] h-[56px] bg-[#43B97F] rounded-full font-400 text-white text-[25px] text-[#295943]">
-              Sign in
+              {signin === true ? "Sign in" : "Sign up"}
             </button>
           </div>
           <div
