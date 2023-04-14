@@ -28,7 +28,7 @@ export const CompanyInfo = () => {
       </div>
 
       <div className="mt-[16vh] w-[80vw] ml-[10vw] text-center flex justify-between ">
-        <p className="w-[40vw] font-Poppins font-light font-[16px]">
+        <p className="w-[40vw] font-Poppins font-light text-[16px]">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Exercitationem facere voluptatum ab, cum fugiat asperiores amet sit
           tenetur maiores unde! In omnis corporis, natus veniam aliquid nesciunt

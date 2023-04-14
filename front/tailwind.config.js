@@ -14,9 +14,7 @@ module.exports = {
         Button: "#43B97F",
         Black: "#141414",
       },
-      images: {
-        'zur': "url('./src/img/zurag1.svg')",
-      }
+      
     },
   },
   plugins: [],
