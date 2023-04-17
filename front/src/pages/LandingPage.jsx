@@ -20,7 +20,7 @@ const LandingPage = () => {
       <img
         src={Landing1}
         alt="img"
-        className="sm:w-screen mt-[-2.7vh] bg-repeat   h-screen w-[100vw]"
+        className="sm:w-screen bg-repeat h-screen w-screen"
       />
       <div className="sm:mt-[-55vh] sm:w-[30vw] sm:ml-[35vw] sm:mt-[-60vh] mt-[-60vh] w-[50vw] ml-[25vw]">
         <p className="text-white font-Poppins text-center sm:text-[46px] md:text-[30px] lg:text-[30px] text-[46px]">
