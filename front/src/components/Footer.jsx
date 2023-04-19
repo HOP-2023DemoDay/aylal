@@ -7,7 +7,7 @@ import github from "../assets/github.svg";
 
 export const Footer = () => {
   return (
-    <div className="font-Poppins bg-[#295943] text-white w-screen overflow-hidden p-[50px] sm:text-xs smm:text-xs smm:p-[10px] sm:p-[20px] md:p-[30px] lg:p-[40px]">
+    <div className="font-Poppins bg-GreenText text-white w-screen overflow-hidden p-[50px] sm:text-xs smm:text-xs smm:p-[10px] sm:p-[20px] md:p-[30px] lg:p-[40px]">
       <div className="flex flex-row">
         <div className="w-1/4 smm:hidden ">
           <p className="text-[33px] text-[33px]">travelaja</p>
