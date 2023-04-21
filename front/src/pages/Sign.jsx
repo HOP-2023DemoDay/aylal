@@ -22,7 +22,7 @@ export const Sign = () => {
   const [hide, setHide] = useState(false);
 
   return (
-    <div className="w-screen h-screen flex justify-evenly items-center bg-[#F8F8F8]">
+    <div className="w-screen h-screen flex justify-evenly items-center bg-White">
       <div className="w-auto h-[576px]">
         <Link
           to="/Home"
@@ -51,7 +51,7 @@ export const Sign = () => {
               }`}
             />
             <p
-              className={`text-GreenText font-500  ${
+              className={`text-GreenText font-500 font-Poppins ${
                 person === true ? "" : "opacity-50"
               }`}
             >
@@ -86,7 +86,7 @@ export const Sign = () => {
         >
           <div className="flex">
             <button
-              className={`w-[302px] h-[56px] bg-GreenText rounded-l-[15px] text-white font-500 text-[25px] ${
+              className={`w-[302px] h-[56px] bg-GreenText rounded-l-[15px] text-white font-Poppins font-500 text-[25px] ${
                 signin === true ? "opacity-50" : ""
               }`}
               onClick={() => setSignin(false)}
@@ -94,7 +94,7 @@ export const Sign = () => {
               Sign up
             </button>
             <button
-              className={`w-[302px] h-[56px] bg-GreenText rounded-r-[15px] text-white font-500 text-[25px] ${
+              className={`w-[302px] h-[56px] bg-GreenText rounded-r-[15px] font-Poppins text-white font-500 text-[25px] ${
                 signin === true ? "" : "opacity-50"
               }`}
               onClick={() => setSignin(true)}
@@ -102,7 +102,7 @@ export const Sign = () => {
               Sign in
             </button>
           </div>
-          <p className="font-500 text-[32px] text-GreenText">
+          <p className="font-500 text-[32px] text-GreenText font-Poppins">
             {signin === true ? "Sign in" : "Sign up "}
           </p>
           <div
@@ -115,7 +115,10 @@ export const Sign = () => {
                 signin === false && person === false ? "flex" : "hidden"
               }`}
             >
-              <p className="font-400 text-[16px] text-[#666666]" type="email">
+              <p
+                className="font-400 text-[16px] font-Poppins text-SmallGrayText"
+                type="email"
+              >
                 Company name
               </p>
               <input className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl" />
@@ -125,13 +128,19 @@ export const Sign = () => {
                 signin === false && person === false ? "flex" : "hidden"
               }`}
             >
-              <p className="font-400 text-[16px] text-[#666666]" type="email">
+              <p
+                className="font-400 text-[16px] font-Poppins text-SmallGrayText"
+                type="email"
+              >
                 Ажлын чиг үүрэг
               </p>
               <input className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl" />
             </div>
             <div className="flex flex-col items-start">
-              <p className="font-400 text-[16px] text-[#666666]" type="email">
+              <p
+                className="font-400 text-[16px] text-SmallGrayText font-Poppins"
+                type="email"
+              >
                 {signin === false && person === false
                   ? "Business email"
                   : "Email"}
@@ -143,14 +152,19 @@ export const Sign = () => {
                 signin === true ? "hidden" : "flex"
               } ${signin === false && person === false ? "hidden" : "flex"}`}
             >
-              <p className="font-400 text-[16px] text-[#666666]" type="text">
+              <p
+                className="font-400 text-[16px] font-Poppins text-SmallGrayText"
+                type="text"
+              >
                 Username
               </p>
               <input className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl" />
             </div>
             <div className="flex flex-col items-start">
               <div className="flex w-full justify-between">
-                <p className="font-400 text-[16px] text-[#666666]">Password</p>
+                <p className="font-400 text-[16px] font-Poppins text-SmallGrayText">
+                  Password
+                </p>
                 <button
                   className="items-center gap-[5px] flex"
                   onClick={() => setHide(!hide)}
@@ -160,7 +174,7 @@ export const Sign = () => {
                     className="w-[16px] h-[16px]"
                     src={hide === true ? showpng : hidepng}
                   />
-                  <p className="font-400 text-[16px] text-[#666666]">
+                  <p className="font-400 text-[16px] text-SmallGrayText">
                     {hide === true ? "Show" : "Hide"}
                   </p>
                 </button>
@@ -170,7 +184,7 @@ export const Sign = () => {
                 type={hide === true ? "password" : "text"}
               />
             </div>
-            <button className="w-[459px] h-[56px] bg-[#43B97F] rounded-full font-400 text-white text-[25px] text-GreenText">
+            <button className="w-[459px] h-[56px] bg-Button font-Poppins rounded-full font-400 text-white text-[25px] text-GreenText">
               {signin === true ? "Sign in" : "Sign up"}
             </button>
           </div>
@@ -180,10 +194,12 @@ export const Sign = () => {
             }`}
           >
             <input
-              className="w-[24px] h-[24px] text-white accent-[#43B97F] bg-white rounded-full"
+              className="w-[24px] h-[24px] text-white accent-Button bg-white rounded-full"
               type="checkbox"
             />
-            <p className="font-400 text-[24px] text-[#333333]">Remember me</p>
+            <p className="font-400 text-[24px] font-Poppins text-MediumDarkText">
+              Remember me
+            </p>
           </div>
         </div>
       </div>

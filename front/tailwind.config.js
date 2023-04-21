@@ -9,10 +9,13 @@ module.exports = {
       colors: {
         GreenText: "#295943",
         DarkText: "#3D3E48",
+        MediumDarkText: "#333333",
         GrayText: "#868383",
         MediumGrayText: "#696969",
+        SmallGrayText: "#666666",
         Button: "#43B97F",
         Black: "#141414",
+        White: "#F8F8F8",
       },
       screens: {
         sm: { min: "640px", max: "767px" },
