@@ -1,7 +1,7 @@
 import React from "react";
 import Arrow from "../img/arrow.jpg";
  import Map from "../img/map.png";
- import Lake from "../img/lake.png"
+ import Lake from "../img/lake.png";
 export const Hutulbur = () => {
   return (
     <div className="overflow-hidden w-screen  ">
@@ -68,7 +68,7 @@ export const Hutulbur = () => {
 
 
 
-        <div className="flex flex-col m-6  w-1/3">
+        <div className="flex flex-col m-6  w-1/3 ">
 
 
           <img src={Map} alt="" className="" />
@@ -121,14 +121,17 @@ export const Hutulbur = () => {
               </div>
             </div>
           </div>
-          </div>
 
-          <div>
+
+          <div className="w-[360px]"> 
+          <div className="flex flex-row justify-center w-[650px]">
             <div>Other Destinations</div>
-            <button>see all</button>
+            <button className="text-Button ml-[12vw]">see all</button>
           </div>
         </div>
+        </div>
 
+        </div>
 
        </div>
   );
