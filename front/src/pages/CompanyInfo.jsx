@@ -1,23 +1,25 @@
 import React from "react";
 import Hutulbur from "../components/Hutulbur";
 import Map from "../img/map.png"
+import img from "../img/companyImg.svg"
+import start from "../img/star.svg"
 
 import clsx from "clsx";
 
 const style = {
-  people: "w-[27px] h-[27px] ml-[-2vw] bg-DarkText rounded-full",
+  people: "w-[40px] h-[40px] ml-[-2vw] bg-DarkText rounded-full",
 };
 
 export const CompanyInfo = () => {
   return (
     <div>
-      <div className="w-screen h-[20vh] bg-slate-300"></div>
-      <div className="w-[90vw] ml-[10vw] flex justify-between mt-[-9vh]">
+      <img src={img} alt="img" className="w-screen h-[20vh] bg-repeat-x bg-slate-500"/>
+      <div className="w-[90vw] flex justify-between mt-[-9vh]">
         <p className="font-Poppins font-bold text-[33px] text-white">CompanyName</p>
-        <div className="w-[16vw] flex justify-between">
-          <p className="font-Poppins font-light text-[28px]">144</p>
-          <div className="w-[2vw] h-[2vh] bg-DarkText"></div>
-          <div className="w-[7vw] flex flex-wrap ml-[10vw]">
+        <div className="w-[268px] flex justify-between">
+          <p className="font-Poppins font-light text-white text-[28px] opacity-50">144</p>
+          <img src={start} alt="start" className="w-[2vw] h-[2vh] opacity-50" />
+          <div className="w-[140px] flex flex-wrap ml-[10vw]">
             <div className={clsx(style.people)}></div>
             <div className={clsx(style.people)}></div>
             <div className={clsx(style.people)}></div>
@@ -28,7 +30,7 @@ export const CompanyInfo = () => {
       </div>
 
       <div className="mt-[16vh] w-[80vw] ml-[10vw] text-center flex justify-between ">
-        <p className="w-[40vw] font-Poppins font-light text-[16px]">
+        <p className="w-[40vw] font-Poppins font-light text-[16px] first-letter:text-7xl">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Exercitationem facere voluptatum ab, cum fugiat asperiores amet sit
           tenetur maiores unde! In omnis corporis, natus veniam aliquid nesciunt

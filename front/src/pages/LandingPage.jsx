@@ -22,10 +22,10 @@ const LandingPage = () => {
         className="sm:w-screen bg-repeat h-screen w-screen"
       />
       <div className="mt-[-100vh] w-screen flex justify-center items-center h-screen">
-        <p className="text-white font-Poppins text-center text-[48px] sm:text-[46px] md:text-[30px] lg:text-[30px] mt-[-48px] ml-[-10vw]">
+        <p className="text-white font-Poppins text-center text-[48px] Txl:text-[60px] sm:text-[46px] smm:text-[25px] md:text-[30px] lg:text-[30px] mt-[-48px] w-screen flex justify-center">
           Explore the world with a smile
         </p>
-        <p className="text-white font-Poppins text-center text-[16px] w-[700px] smm:w-[80vw] mt-[48px] ml-[10vw]">
+        <p className="text-white font-Poppins text-center text-[16px] smm:w-[80vw] mt-[150px] absolute w-[700px] Txl:text-[20px] smm:text-[15px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
           purus sit amet luctus venenatis, lectus magna fringilla urna,
           porttitor rhoncus dolor purus non enim praesent elementum facilisis
