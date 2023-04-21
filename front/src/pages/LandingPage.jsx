@@ -9,9 +9,11 @@ import clsx from "clsx";
 const style = {
   too: "text-GreenText font-Poppins text-[45px] font-bold sm:text-5xl smmmd:text-2xl smm:text-2xl sm:text-GreenText lg:text-[18px]",
   TooText: "text-DarkText font-Poppins text-[16px] lg:text-[16px]",
-  jijigTit:"text-[16px] text-GreenText font-Poppins w-screen flex justify-center font-bold ",
-  TomTit:"text-3xl text-DarkText text-center font-Poppins font-bold w-screen flex justify-center font-bold",
-  Cards:"w-screen flex sm:flex-wrap overflow-x-auto mt-[5vh]",
+  jijigTit:
+    "text-[16px] text-GreenText font-Poppins w-screen flex justify-center font-bold ",
+  TomTit:
+    "text-3xl text-DarkText text-center font-Poppins font-bold w-screen flex justify-center font-bold",
+  Cards: "w-screen flex sm:flex-wrap overflow-x-auto mt-[5vh]",
 };
 const LandingPage = () => {
   return (
@@ -50,30 +52,45 @@ const LandingPage = () => {
           purus sit amet luctus venenatis, lectus magna fringilla urna,
           porttitor rhoncus dolor purus non enim praesent elementum facilisis
           leo, vel fringilla est ullamcorper eget nulla facilisi
-        </p>      
+        </p>
         <div className=" w-[28vw] flex flex-wrap mt-0">
-        <div className="w-[10vw] mt-[2vh]">
-          <p className={clsx(style.too)}>100+</p>
-          <p className={clsx(style.TooText)}>Holiday Package</p>
-        </div>
-        <div className="w-[10vw] mt-[2vh]">
-          <p className={clsx(style.too , " smmmd:ml-[3vw] smm:ml-[20vw]")}>172</p>
-          <p className={clsx(style.TooText , "smmmd:ml-[3vw] smm:ml-[20vw]")}>Hotels</p>
-        </div>
-        <div className="w-[10vw] mt-[2vh]">
-          <p className={clsx(style.too)}>68</p>
-          <p className={clsx(style.TooText)}>Elite</p>
-        </div>
-        <div className="w-[15vw] mt-[2vh] md:ml-[2vw]">
-          <p className={clsx(style.too,style.ml , "smmmd:ml-[3vw] smm:ml-[20vw]")}>32M+</p>
-          <p className={clsx(style.TooText , "smmmd:ml-[3vw] smm:ml-[20vw] smm:w-[20vw]")}>
-            we help to find your dream place
-          </p>
+          <div className="w-[10vw] mt-[2vh]">
+            <p className={clsx(style.too)}>100+</p>
+            <p className={clsx(style.TooText)}>Holiday Package</p>
+          </div>
+          <div className="w-[10vw] mt-[2vh]">
+            <p className={clsx(style.too, " smmmd:ml-[3vw] smm:ml-[20vw]")}>
+              172
+            </p>
+            <p className={clsx(style.TooText, "smmmd:ml-[3vw] smm:ml-[20vw]")}>
+              Hotels
+            </p>
+          </div>
+          <div className="w-[10vw] mt-[2vh]">
+            <p className={clsx(style.too)}>68</p>
+            <p className={clsx(style.TooText)}>Elite</p>
+          </div>
+          <div className="w-[15vw] mt-[2vh] md:ml-[2vw]">
+            <p
+              className={clsx(
+                style.too,
+                style.ml,
+                "smmmd:ml-[3vw] smm:ml-[20vw]"
+              )}
+            >
+              32M+
+            </p>
+            <p
+              className={clsx(
+                style.TooText,
+                "smmmd:ml-[3vw] smm:ml-[20vw] smm:w-[20vw]"
+              )}
+            >
+              we help to find your dream place
+            </p>
+          </div>
         </div>
       </div>
-      </div>
-
-
 
       <div className="sm:mt-[20vh] mt-[20vh] mmmd:mt-[-10vh]">
         <p className={clsx(style.jijigTit)}>top destination</p>

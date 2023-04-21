@@ -16,6 +16,10 @@ export const Header = () => {
       path: "/CompanyInfo",
       value: "CompanyInfo",
     },
+    {
+      path: "/Hutulbur",
+      value: "Hutulbur",
+    },
   ];
   return (
     <div
