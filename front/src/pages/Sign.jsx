@@ -31,7 +31,7 @@ export const Sign = () => {
           <img src={arrow} className="w-[45px] h-[45px]" alt="" />
         </Link>
       </div>
-      <div className="mt-[70px] hidden xl:flex">
+      <div className="mt-[70px]">
         <Lottie
           height={700}
           width={700}
@@ -42,34 +42,34 @@ export const Sign = () => {
       <div className="gap-[20px] flex flex-col">
         <div className="flex flex-row justify-center items-center gap-[10px]">
           <button
-            className="flex flex-col gap-[8px] justify-center items-center"
+            className="flex flex-col gap-[8px] justify-center text-Poppins items-center"
             onClick={() => setPerson(true)}
           >
             <div
-              className={`w-[30px] h-[30px] bg-[#295943] rounded-full ${
+              className={`w-[30px] h-[30px] bg-GreenText rounded-full ${
                 person === true ? "" : "opacity-50"
               }`}
             />
             <p
-              className={`text-[#295943] font-500  ${
+              className={`text-GreenText font-500  ${
                 person === true ? "" : "opacity-50"
               }`}
             >
               Individual
             </p>
           </button>
-          <div className="w-[232px] h-[2px] bg-[#295943]"></div>
+          <div className="w-[232px] h-[2px] bg-GreenText"></div>
           <button
             className="flex flex-col gap-[8px] justify-center items-center"
             onClick={() => setPerson(false)}
           >
             <div
-              className={`w-[30px] h-[30px] bg-[#295943] rounded-full ${
+              className={`w-[30px] h-[30px] bg-GreenText rounded-full ${
                 person === true ? "opacity-50" : ""
               }`}
             />
             <p
-              className={`text-[#295943] font-500  ${
+              className={`text-GreenText font-500  ${
                 person === true ? "opacity-50" : ""
               }`}
             >
@@ -86,7 +86,7 @@ export const Sign = () => {
         >
           <div className="flex">
             <button
-              className={`w-[302px] h-[56px] bg-[#295943] rounded-l-[15px] text-white font-500 text-[25px] ${
+              className={`w-[302px] h-[56px] bg-GreenText rounded-l-[15px] text-white font-500 text-[25px] ${
                 signin === true ? "opacity-50" : ""
               }`}
               onClick={() => setSignin(false)}
@@ -94,7 +94,7 @@ export const Sign = () => {
               Sign up
             </button>
             <button
-              className={`w-[302px] h-[56px] bg-[#295943] rounded-r-[15px] text-white font-500 text-[25px] ${
+              className={`w-[302px] h-[56px] bg-GreenText rounded-r-[15px] text-white font-500 text-[25px] ${
                 signin === true ? "" : "opacity-50"
               }`}
               onClick={() => setSignin(true)}
@@ -102,7 +102,7 @@ export const Sign = () => {
               Sign in
             </button>
           </div>
-          <p className="font-500 text-[32px] text-[#295943]">
+          <p className="font-500 text-[32px] text-GreenText">
             {signin === true ? "Sign in" : "Sign up "}
           </p>
           <div
@@ -170,7 +170,7 @@ export const Sign = () => {
                 type={hide === true ? "password" : "text"}
               />
             </div>
-            <button className="w-[459px] h-[56px] bg-[#43B97F] rounded-full font-400 text-white text-[25px] text-[#295943]">
+            <button className="w-[459px] h-[56px] bg-[#43B97F] rounded-full font-400 text-white text-[25px] text-GreenText">
               {signin === true ? "Sign in" : "Sign up"}
             </button>
           </div>
