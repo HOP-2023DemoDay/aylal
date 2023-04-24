@@ -22,13 +22,16 @@ module.exports = {
       colors: {
         GreenText: "#295943",
         DarkText: "#3D3E48",
+        MediumDarkText: "#333333",
         GrayText: "#868383",
         MediumGrayText: "#696969",
+        SmallGrayText: "#666666",
         Button: "#43B97F",
         Black: "#141414",
+        White: "#F8F8F8",
       },
-
       screens: {
+<<<<<<< HEAD
         smm: { min: "0px", max: "639px" },
         smmsm: { min: "0px", max: "767px" },
         smmsmm: { min: "320px", max: "375px" },
@@ -38,6 +41,13 @@ module.exports = {
         lg: { min: "1024px", max: "1279px" },
         xl: { min: "1280px", max: "1535px" },
         Txl: { min: "1536px" },
+=======
+        sm: { min: "640px", max: "767px" },
+        md: { min: "768px", max: "1023px" },
+        lg: { min: "1024px", max: "1279px" },
+        xl: { min: "1280px", max: "1535px" },
+        "2xl": { min: "1536px" },
+>>>>>>> main
       },
     },
   },
