@@ -3,23 +3,14 @@ import clsx from "clsx";
 import Hutulbur from "../components/Hutulbur";
 import Map from "../img/map.png"
 import star from "../img/star.svg"
-// import hun from "../img/hun.png"
+import hun from "../img/hun.png"
 import img from "../img/companyImg.svg"
 import pagearr from "../img/pagearr.svg"
 
 const style = {
-  people: "w-[40px] h-[40px] ml-[-2vw] bg-DarkText rounded-full",
+  people: "w-[40px] h-[40px] ml-[-2vw] bg-DarkText rounded-full smm:ml-[-7vw] smm:w-[30px] smm:h-[30px]",
   box: "flex justify-between w-[281px] mt-[2vh]",
 };
-
-//         smm: { min: "0px", max: "639px" },
-//         smmsm: { min: "0px", max: "767px" },
-//         sm: { min: "640px", max: "767px" },  
-//         md: { min: "768px", max: "768px" },
-//         smmmd: { min: "640px", max: "1023px" },
-//         lg: { min: "1024px", max: "1279px" },
-//         xl: { min: "1280px", max: "1535px" },
-//         Txl: { min: "1536px" },
 
 export const CompanyInfo = () => {
   return (
@@ -27,20 +18,20 @@ export const CompanyInfo = () => {
       <div>
       <img src={img} alt="img" className="w-screen h-[20vh] object-cover" />
       <button><img src={pagearr} alt="arrow" onClick = {() => {console.log("first")}} className="h-10 mt-[-30vh] ml-[2vw]" /></button>
-      <div className="w-[90vw] ml-[10vw] flex justify-between mt-[-9vh]">
-        <p className="font-Poppins font-bold text-[33px] text-white  ">CompanyName</p>
-        <div className="w-[15vw] flex justify-between">
+      <div className="w-screen flex justify-around mt-[-9vh]">
+        <p className="font-Poppins font-bold text-[33px] text-white ml-[-20vw] md:text-[28px] smmmd:ml-[0px] smm:text-[20px]">CompanyName</p>
+        <div className="w-[15vw] flex justify-between mr-[-20vw] smmmd:mr-[0px]">
           <div className="w-[90px]">
-          <p className="font-Poppins font-light text-[28px] opacity-50 text-white">144</p>
-          <img src={star} alt="start" className="w-[2vw] h-[2vh] opacity-50 ml-[2vw] mt-[-3vh]"/>
+          <p className="font-Poppins font-light text-[28px] opacity-50 text-white md:text-[26px] smm:ml-[-30vw] smm:text-[20px]">144</p>
+          <img src={star} alt="start" className="w-[25px] h-[25px] opacity-50 ml-[40px] mt-[-3vh] smm:ml-[-20vw]"/>
           </div>
-          {/* <div className="w-[140px] flex flex-wrap ml-[5vw]">
+          <div className="w-[140px] flex ml-[5vw] smm:ml-[-10vw]">
             <img src={hun} alt="hun" className={clsx(style.people)}/>
             <img src={hun} alt="hun" className={clsx(style.people)}/>
             <img src={hun} alt="hun" className={clsx(style.people)}/>
             <img src={hun} alt="hun" className={clsx(style.people)}/>
             <img src={hun} alt="hun" className={clsx(style.people)}/>
-          </div> */}
+          </div>
         </div>
       </div>
       </div>
