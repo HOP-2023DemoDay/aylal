@@ -8,7 +8,8 @@ export const Header = () => {
       <div>
         <Link to="/">Landing</Link>
         <Link to="/Home">Home</Link>
-        <Link to="/Sign">Home</Link>
+        <Link to="/CompanyInfo">CompanyInfo</Link>
+        <Link to="/Hutulbur">Hutulbur</Link>
       </div>
       <div>
         <button>Log out</button>
@@ -17,3 +18,5 @@ export const Header = () => {
     </div>
   );
 };
+
+export default Header;
