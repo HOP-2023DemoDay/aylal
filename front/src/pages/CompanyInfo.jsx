@@ -1,34 +1,45 @@
 import React from "react";
+import clsx from "clsx";
 import Hutulbur from "../components/Hutulbur";
 import Map from "../img/map.png"
-
-import clsx from "clsx";
+import star from "../img/star.svg"
+import hun from "../img/hun.png"
+import img from "../img/companyImg.svg"
+import pagearr from "../img/pagearr.svg"
 
 const style = {
-  people: "w-[27px] h-[27px] ml-[-2vw] bg-DarkText rounded-full",
+  people: "w-[40px] h-[40px] ml-[-2vw] bg-DarkText rounded-full smm:ml-[-7vw] smm:w-[30px] smm:h-[30px]",
+  box: "flex justify-between w-[281px] mt-[2vh]",
 };
 
 export const CompanyInfo = () => {
   return (
-    <div>
-      <div className="w-screen h-[20vh] bg-slate-300"></div>
-      <div className="w-[90vw] ml-[10vw] flex justify-between mt-[-9vh]">
-        <p className="font-Poppins font-bold text-[33px] text-white">CompanyName</p>
-        <div className="w-[16vw] flex justify-between">
-          <p className="font-Poppins font-light text-[28px]">144</p>
-          <div className="w-[2vw] h-[2vh] bg-DarkText"></div>
-          <div className="w-[7vw] flex flex-wrap ml-[10vw]">
-            <div className={clsx(style.people)}></div>
-            <div className={clsx(style.people)}></div>
-            <div className={clsx(style.people)}></div>
-            <div className={clsx(style.people)}></div>
-            <div className={clsx(style.people)}></div>
+    <div className="overflow-hidden">
+      <div>
+      <img src={img} alt="img" className="w-screen h-[20vh] object-cover" />
+      <button><img src={pagearr} alt="arrow" onClick = {() => {console.log("first")}} className="h-10 mt-[-30vh] ml-[2vw]" /></button>
+      <div className="w-screen flex justify-around mt-[-9vh]">
+        <p className="font-Poppins font-bold text-[33px] text-white ml-[-20vw] md:text-[28px] smmmd:ml-[0px] smm:text-[20px]">CompanyName</p>
+        <div className="w-[15vw] flex justify-between mr-[-20vw] smmmd:mr-[0px]">
+          <div className="w-[90px]">
+          <p className="font-Poppins font-light text-[28px] opacity-50 text-white md:text-[26px] smm:ml-[-30vw] smm:text-[20px]">144</p>
+          <img src={star} alt="start" className="w-[25px] h-[25px] opacity-50 ml-[40px] mt-[-3vh] smm:ml-[-20vw]"/>
+          </div>
+          <div className="w-[140px] flex ml-[5vw] smm:ml-[-10vw]">
+            <img src={hun} alt="hun" className={clsx(style.people)}/>
+            <img src={hun} alt="hun" className={clsx(style.people)}/>
+            <img src={hun} alt="hun" className={clsx(style.people)}/>
+            <img src={hun} alt="hun" className={clsx(style.people)}/>
+            <img src={hun} alt="hun" className={clsx(style.people)}/>
           </div>
         </div>
       </div>
+      </div>
+      <div className="mt-[16vh] w-screen flex justify-around md:mt-[10vh] smmsm:mt-[1vh] ">
 
-      <div className="mt-[16vh] w-[80vw] ml-[10vw] text-center flex justify-between ">
-        <p className="w-[40vw] font-Poppins font-light text-[16px]">
+        <div className="w-1/3 smmsm:w-screen smmsm:mt-[2vh]">
+        <p className="text-[28px] font-Poppins text-DarkText font-bold lg:text-[26px]">Get in touch</p>
+        <p className="w-[40vw] font-Poppins font-light text-[16px] xl:text-[14px] text-center mt-[2vh] lg:mt-[1vh] md:text-[10px] lg:text-[12px] smmsm:text-[10px] smmsm:w-screen">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Exercitationem facere voluptatum ab, cum fugiat asperiores amet sit
           tenetur maiores unde! In omnis corporis, natus veniam aliquid nesciunt
@@ -69,19 +80,39 @@ export const CompanyInfo = () => {
           molestiae iure neque nobis, a aperiam facere non voluptas fuga?
           Voluptas veritatis qui vitae ratione repellendus facere illum
         </p>
-        <div>
-          <img src={Map} className="w-[29vw] h-[46vh] bg-slate-900 " alt="Map" />
-          <div className="w-[22vw] ml-[2vw] mt-[2vh] flex flex-wrap">
-            <p>Address:</p>
-            <input className="ml-[1vw]" type="text" placeholder="njfkbjsbrz" />
-            <p className="ml-[1vw]">Email:</p>
-            <input className="ml-[1vw]" type="text" placeholder="email"/>
-            <p className="mt-[2vh]">Phone:</p>
-            <input className="mt-[2vh] ml-[1vw]" type="text" placeholder="+12345678" />
+        </div>
+
+        <div className="w-1/3 smmsm:w-screen smmsm:mt-[60vh] smmsm:ml-[-80vw]  smmsmm:mt-[73vh]">
+          <img src={Map} className="w-[29vw] h-[46vh] bg-slate-900 smmsm:w-[80vw] smmsm:ml-[-10vw]" alt="Map" />
+          <div className="w-[29vw] grid grid-cols-2 smmsm:grid-cols-1 xl:grid-cols-1 lg:grid-cols-1 md:grid-cols-1 mt-[3vh]">
+            <div className={clsx(style.box)}> 
+            <p className="">Address :</p>
+            <input type="text" placeholder="JL.Cindelaras No.205A" name="" id="" />
+            </div>
+            <div className={clsx(style.box)}>
+            <p>Email :</p>
+            <input type="text" placeholder="info@travelaja.com" name="" id="" />
+            </div>
+            <div className={clsx(style.box)}>
+            <p>Phone :</p>
+            <input type="text" placeholder="+62 1234 432 567" name="" id="" />
+            </div>
           </div>
         </div>
+
       </div>
-      <div className="flex flex-wrap w-[82vw] h-[80vh] mx-[8vw] mt-[5vh]">
+      <div className="w-screen flex sm:flex-wrap overflow-x-auto mt-[5vh]">
+        <Hutulbur />
+        <Hutulbur />
+        <Hutulbur />
+        <Hutulbur />
+        <Hutulbur />
+        <Hutulbur />
+        <Hutulbur />
+        <Hutulbur />
+        <Hutulbur />
+      </div>
+      <div className="w-screen flex sm:flex-wrap overflow-x-auto mt-[5vh] mb-[5vh]">
         <Hutulbur />
         <Hutulbur />
         <Hutulbur />
