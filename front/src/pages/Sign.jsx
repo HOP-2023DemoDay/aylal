@@ -11,12 +11,16 @@ export const Sign = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData,
+    animationData: animationData,     
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
 
+
+
+
+  
   const [person, setPerson] = useState(true);
   const [signin, setSignin] = useState(true);
   const [hide, setHide] = useState(false);
