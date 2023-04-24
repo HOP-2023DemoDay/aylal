@@ -4,13 +4,13 @@ import LandingPage from "./pages/Hutulbur";
 import Hutulbur from "./pages/Hutulbur";
 import Home from "./pages/Home";
 import CompanyInfo from "./pages/CompanyInfo";
-// import { Header } from "./components/Header";
+import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 
 const App = () => {
   return (
     <BrowserRouter>
-      {/* <Header /> */}
+      <Header />
       <Routes>
         <Route path="/" element={<LandingPage />}></Route>
         <Route path="/Home" element={<Home />}></Route>
