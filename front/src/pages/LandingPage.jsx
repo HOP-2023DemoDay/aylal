@@ -8,13 +8,16 @@ import clsx from "clsx";
 //       5xl 3xl 1xl 33px 19px 18px 16px 15px 10px
 const style = {
   too: "text-GreenText font-Poppins text-[45px] font-bold sm:text-5xl smmmd:text-2xl smm:text-2xl sm:text-GreenText lg:text-[18px]",
-  TooText: "text-DarkText font-Poppins text-[16px] lg:text-[16px]",
+  TooText: "text-DarkText font-Poppins text-[16px] lg:text-[16px]",              
   jijigTit:
     "text-[16px] text-GreenText font-Poppins w-screen flex justify-center font-bold ",
   TomTit:
     "text-3xl text-DarkText text-center font-Poppins font-bold w-screen flex justify-center font-bold",     
   Cards: "w-screen flex sm:flex-wrap overflow-x-auto mt-[5vh]",
 };
+
+
+
 const LandingPage = () => {
   return (
     <div className="overflow-hidden">
