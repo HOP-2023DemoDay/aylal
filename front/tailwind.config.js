@@ -27,6 +27,7 @@ module.exports = {
         Button: "#43B97F",
         Black: "#141414",
       },
+
       screens: {
         smm: { min: "0px", max: "639px" },
         smmsm: { min: "0px", max: "767px" },
