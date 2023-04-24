@@ -95,6 +95,8 @@ const LandingPage = () => {
         </div>
       </div>
 
+
+
       <div className="sm:mt-[20vh] mt-[20vh] mmmd:mt-[-10vh]">
         <p className={clsx(style.jijigTit)}>top destination</p>
         <p className={clsx(style.TomTit)}>Discover your love</p>
