@@ -12,7 +12,7 @@ const style = {
   jijigTit:
     "text-[16px] text-GreenText font-Poppins w-screen flex justify-center font-bold ",
   TomTit:
-    "text-3xl text-DarkText text-center font-Poppins font-bold w-screen flex justify-center font-bold",
+    "text-3xl text-DarkText text-center font-Poppins font-bold w-screen flex justify-center font-bold",     
   Cards: "w-screen flex sm:flex-wrap overflow-x-auto mt-[5vh]",
 };
 const LandingPage = () => {
