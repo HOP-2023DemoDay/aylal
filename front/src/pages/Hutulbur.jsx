@@ -6,36 +6,28 @@ import News from "../components/news";
 import clsx from "clsx"
 
 const style = {
-  box: "flex justify-between w-[281px] mt-[2vh]",
+  box: "flex justify-between w-[281px] mt-[2vh] 2xl:text-[30px] 2xl:w-[500px] font-Poppins",
 };
 
-export const Hutulbur = () => {
+export const Hutulbur = () => {           
   return (
     <div className="overflow-hidden w-screen  ">
       <div className="flex felx-col w-full h-52 bg-slate-500 w-full">
         <button onClick = {() => {console.log("first")}} className="h-10 mt-[3vh] ml-[2vw]"> <img src={Arrow} alt=""/></button>
-        <div className="font-bold text-[33.18px] mb-[2vh] text-white flex items-end smmsm:text-[25px]">Taman Nasional Bunaken</div>
+        <div className="font-bold text-[33.18px] mb-[2vh] text-white flex items-end text-[25px] 2xl:text-[45px]">Taman Nasional Bunaken</div>
       </div>
 
-      <div className="w-screen flex flex-row justify-around smmsm:flex-col">
-        <div className="flex flex-col w-1/3 Txl:w-[750px] Txl:text-[20px] xl:w-[500px] lg:w-[380px] smmsm:mr-[20px] smmsm:w-[350px] smmsm:mx-[25px] ml-[80px] text-center">
-          <div className="font-bold smmsm:text-[23px] Txl:text-[35px] ">
+      <div className="w-screen flex 2xl:flex-row 2xl:justify-around xl:flex-row xl:justify-around lg:flex-row lg:justify-around md:flex-row md:justify-around sm:flex-row sm:justify-around flex-col">
+        <div className="flex flex-col w-1/3 2xl:w-[850px] xl:w-[500px] lg:w-[380px] sm:text-[15px] mx-[30px] w-auto font-Poppins">
+          <div className="font-bold  2xl:text-[45px] xl:text-[30px] lg:text-[25px] md:text-[25px] sm:text-[20px] text-[20px] text-start ">
             Get in touch
           </div>
-          <div className="flex flex-row">
-            <div className="flex flex-col mt-8">
-              <div>
+              <div className=" text-center 2xl:text-[30px] sm:text-[15px] text-[15px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
                 aliquam, purus sit amet luctus venenatis, lectus magna fringilla
                 urna, porttitor rhoncus dolor purus non enim praesent{" "}
-              </div>
-              <div>
                 elementum facilisis leo, vel fringilla est ullamcorper eget
                 nulla.
-              </div>
-            </div>
-          </div>
-          <div>
             enim lobortis scelerisque fermentum dui faucibus in ornare quam
             viverra orci sagittis eu volutpat odio facilisis mauris sit amet
             massa vitae tortor condimentum lacinia quis vel eros donec ac odio
@@ -43,8 +35,6 @@ export const Hutulbur = () => {
             viverra vitae congue eu, consequat ac felis donec et odio
             pellentesque diam volutpat commodo sed egestas egestas fringilla
             fau.{" "}
-          </div>
-          <div>
             enim lobortis scelerisque fermentum dui faucibus in ornare quam
             viverra orci sagittis eu volutpat odio facilisis mauris sit amet
             massa vitae tortor condimentum lacinia quis vel eros donec ac odio
@@ -52,8 +42,6 @@ export const Hutulbur = () => {
             viverra vitae congue eu, consequat ac felis donec et odio
             pellentesque diam volutpat commodo sed egestas egestas fringilla
             fau.
-          </div>
-          <div>
             enim lobortis scelerisque fermentum dui faucibus in ornare quam
             viverra orci sagittis eu volutpat odio facilisis mauris sit amet
             massa vitae tortor condimentum lacinia quis vel eros donec ac odio
@@ -61,26 +49,28 @@ export const Hutulbur = () => {
             viverra vitae congue eu.
           </div>
 
-          <img src={Lake} alt="" />
+          <img src={Lake} alt="" className="2xl:h-[500px] lg:h-[350px] md:h-[200px] sm:h-[150px] h-[200px]" />
 
-          <div className="smmsm:mt-[70vh]">
-          <div className="text-start">Comment:</div>
+          <div className="mt-[43vh] 2xl:mt-0 xl:mt-0  lg:mt-0 md:mt-0 sm:mt-0">
+
+          <div className="2xl:text-[30px] font-Poppins">Comment:</div>
           <textarea
             type="text"
-            className="rounded-lg xl:h-[250px] border-2 xl:pt-[-20vh] xl:pb-[20vh] xl:text-[20px] xl:w-[500px] lg:h-[200px] lg:w-[370px] md:h-[150px] md:w-[270px] smmsm:h-[150px] smmsm:w-[360px]"
+            className="rounded-lg border-2 2xl:h-[400px] 2xl:w-[850px] 2xl:text-[35px] xl:h-[250px] xl:w-[500px] xl:text-[20px]  lg:h-[200px] lg:w-[370px] md:h-[150px] md:w-[270px] sm:h-[130px] sm:w-[250px] w-[250px]  h-[200px] "
           ></textarea>
-          <button className="rounded-[8px] w-[120px] h-[40px] text-white text-[16px] font-bold bg-Button mt-[4vh]">Send</button>
+          <button className="rounded-[8px] 2xl:text-[30px] 2xl:h-[55px] 2xl:w-[200px]  w-[120px] h-[40px] text-white text-[16px] font-bold bg-Button mt-[4vh] justify-self-start">Send</button>
+          
           </div>
         </div>
 
-        <div className="flex flex-col m-6  w-1/3 smmsm:w-[380px]  ">
+        <div className="flex flex-col m-6  w-1/3  ">
           
           
-          <div className=" smmsm:mt-[-95vh]">
-          <img src={Map} className="w-full h-[46vh] bg-slate-900 md:h-[34vh] md: w-[40vh]" alt="Map" />
-          <div className="xl:w-[29vw] xl:h-[8vh]  lg:h-[16vh] md:h-[16vh] smmsm:h-[17vh]  xl:mt-[3vh]">
+          <div className=" mt-[-73vh] 2xl:mt-0 xl:mt-0  lg:mt-0 md:mt-0 sm:mt-0">
+          <img src={Map} className="  bg-slate-900 2xl:w-[950px] 2xl:h-[750px]  md:h-[34vh] md: w-[40vh] sm:h-[300px] w-[280px] mr-[7px] h-[200px]" alt="Map" />
+          <div className="xl:w-[29vw] xl:h-[8vh]  lg:h-[16vh]  md:h-[16vh] h-[17vh]  xl:mt-[3vh]">
             <div className={clsx(style.box)}> 
-            <p className="">Address :</p>
+            <p >Address :</p>
             <input type="text" placeholder="JL.Cindelaras No.205A" name="" id="" />
             </div>
             <div className={clsx(style.box)}>
@@ -95,10 +85,10 @@ export const Hutulbur = () => {
           </div>
 
 
-          <div className="flex flex-col justify-center w-[650px] xl:mt-[8vh] smmsm:mt-[30vh]">
-            <div className="flex flex-row">
-              <div className="md:text-[15px]">Other Destinations</div>
-              <button className="text-Button ml-[10vw] smmsm: ml-[30vw]">see all</button>
+          <div className="flex flex-col justify-center 2xl:w-[750px] 2xl:mt-[4vh] xl:mt-[8vh] lg:mt-0 md:mt-0 sm:mt-0 mt-[33vh]">
+            <div className="flex flex-row 2xl:mb-[-7vh] xl:mb-[-5vh] lg:mb-[-4vh] md:mb-[-2vh] sm:mb-[-1.5vh] sm:mt-[15px] mb-[-3vh] font-Poppins">
+              <div className="md:text-[15px]  2xl:text-[30px] 2xl:w-[500px] sm:text-[15px] ">Other Destinations</div>
+              <button className="text-Button ml-[10vw]   2xl:text-[30px]  2xl:w-[300px] sm:text-[15px]">see all</button>
             </div>
             <News/>
             <News />
