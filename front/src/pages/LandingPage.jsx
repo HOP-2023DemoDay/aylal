@@ -7,16 +7,16 @@ import clsx from "clsx";
 
 //       5xl 3xl 1xl 33px 19px 18px 16px 15px 10px
 const style = {
-  too: "text-GreenText font-Poppins text-[45px] font-bold sm:text-5xl smmmd:text-2xl smm:text-2xl sm:text-GreenText lg:text-[18px]",
-  TooText: "text-DarkText font-Poppins text-[16px] lg:text-[16px]",              
+  too: "text-GreenText font-Poppins text-[25px] xl:text-[35px] lg:text-[30px] 2xl:text-[35px] font-bold sm:text-5xl sm:text-GreenText lg:text-[18px]",
+  TooText: "text-DarkText font-Poppins text-[16px] lg:text-[16px]",
+  TooBox: "w-[20vw] mt-[2vh] 2xl:w-[10vw] xl:w-[10vw] lg:w-[10vw] md:w-[10vw] sm:w-[10vw]",
+  ImgText: "2xl:w-[30vw] sm:w-[30vw] md:w-[30vw] lg:w-[30vw] xl:w-[30vw] w-[90vw] mx-[5vw] sm:mt-[-40vh] mt-[10vh] lg:mt-[-35vh] 2xl:mt-[-40vh] 2xl:ml-[60vw] xl:mt-[-40vh] xl:ml-[60vw] lg:mt-[-40vh] lg:ml-[60vw] md:mt-[-30vh] md:ml-[60vw] sm:mt-[-40vh] sm:ml-[60vw]",
   jijigTit:
     "text-[16px] text-GreenText font-Poppins w-screen flex justify-center font-bold ",
   TomTit:
-    "text-3xl text-DarkText text-center font-Poppins font-bold w-screen flex justify-center font-bold",     
+    "text-3xl text-DarkText text-center font-Poppins font-bold w-screen flex justify-center font-bold",
   Cards: "w-screen flex sm:flex-wrap overflow-x-auto mt-[5vh]",
 };
-
-
 
 const LandingPage = () => {
   return (
@@ -24,13 +24,13 @@ const LandingPage = () => {
       <img
         src={Landing1}
         alt="img"
-        className="sm:w-screen bg-repeat h-screen w-screen"
+        className="sm:w-screen object-cover h-screen w-screen"
       />
-      <div className="mt-[-100vh] w-screen flex justify-center items-center h-screen">
-        <p className="text-white font-Poppins text-center text-[48px] Txl:text-[60px] sm:text-[46px] smm:text-[25px] md:text-[30px] lg:text-[30px] mt-[-48px] w-screen flex justify-center">
+      <div className="mt-[-100vh] w-screen flex justify-center items-center h-screen ">
+        <p className="text-white font-Poppins text-center text-[30px] 2xl:text-[60px] sm:text-[46px] md:text-[30px] lg:text-[30px] mt-[-48px] flex justify-center">
           Explore the world with a smile
         </p>
-        <p className="text-white font-Poppins text-center text-[16px] smm:w-[80vw] mt-[150px] absolute w-[700px] Txl:text-[20px] smm:text-[15px]">
+        <p className="text-white font-Poppins text-center text-[14px] mt-[150px] absolute 2xl:text-[20px] mx-[5vw]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
           purus sit amet luctus venenatis, lectus magna fringilla urna,
           porttitor rhoncus dolor purus non enim praesent elementum facilisis
@@ -41,63 +41,44 @@ const LandingPage = () => {
       <img
         src={Landing2}
         alt="img"
-        className=" w-[34vw] mt-[20vh] ml-[10vw] lg:w-[40vw] lg:ml-[8vw] smmmd:hidden smm:hidden"
+        className=" w-[90vw] mt-[10vh] mx-[5vw] md:w-[40vw] md:mt-[20vh] md:ml-[10vw] xl:w-[40vw] xl:mt-[20vh] xl:ml-[10vw] 2xl:w-[40vw] 2xl:mt-[20vh] 2xl:ml-[10vw]  lg:w-[40vw] lg:ml-[8vw] "
       />
-      <div className="w-[40vw] ml-[50vw] sm:mt-[-40vh] mt-[-40vh] lg:mt-[-35vh] smmmd:mt-[15vh] smmmd:mb-[-15vh] smmmd:ml-[25vw] smmmd:w-screen smm:mt-[15vh] smm:ml-[5vw]">
-        <p className="text-GreenText font-Poppins text-[28px] font-bold smmmd:mt-[5vh] lg:text-[25px] mt-[-5vh] lg:text-[25px] smmmd:mt-[50vh] smmmd:w-screen smm:text-[23px]">
+      <div className={clsx(style.ImgText)}>
+        <p className="text-GreenText font-Poppins text-[28px] font-bold lg:text-[25px] mt-[-5vh] lg:text-[25px]">
           Travelers Point
         </p>
-        <p className="font-Poppins text-[28px] font-bold lg:text-[20px] smmmd:w-screen smm:w-screen smm:text-[25px]">
+        <p className="font-Poppins text-[28px] font-bold lg:text-[20px]">
           We help to find your dream place
         </p>
-        <p className="font-Poppins text-[16px] smmmd:w-[50vw] smm:w-[90vw] smm:text-[15px]">
+        <p className="font-Poppins text-[16px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
           purus sit amet luctus venenatis, lectus magna fringilla urna,
           porttitor rhoncus dolor purus non enim praesent elementum facilisis
           leo, vel fringilla est ullamcorper eget nulla facilisi
         </p>
-        <div className=" w-[28vw] flex flex-wrap mt-0">
-          <div className="w-[10vw] mt-[2vh]">
+        <div className="2xl:w-[28vw] sm:w-[28vw] md:w-[28vw] lg:w-[28vw] xl:w-[28vw] w-[50vw] flex flex-wrap mt-0">
+          <div className={clsx(style.TooBox)}>
             <p className={clsx(style.too)}>100+</p>
             <p className={clsx(style.TooText)}>Holiday Package</p>
           </div>
-          <div className="w-[10vw] mt-[2vh]">
-            <p className={clsx(style.too, " smmmd:ml-[3vw] smm:ml-[20vw]")}>
-              172
-            </p>
-            <p className={clsx(style.TooText, "smmmd:ml-[3vw] smm:ml-[20vw]")}>
-              Hotels
-            </p>
+          <div className={clsx(style.TooBox)}>
+            <p className={clsx(style.too)}>172</p>
+            <p className={clsx(style.TooText)}>Hotels</p>
           </div>
-          <div className="w-[10vw] mt-[2vh]">
+          <div className={clsx(style.TooBox)}>
             <p className={clsx(style.too)}>68</p>
             <p className={clsx(style.TooText)}>Elite</p>
           </div>
-          <div className="w-[15vw] mt-[2vh] md:ml-[2vw]">
-            <p
-              className={clsx(
-                style.too,
-                style.ml,
-                "smmmd:ml-[3vw] smm:ml-[20vw]"
-              )}
-            >
-              32M+
-            </p>
-            <p
-              className={clsx(
-                style.TooText,
-                "smmmd:ml-[3vw] smm:ml-[20vw] smm:w-[20vw]"
-              )}
-            >
+          <div className={clsx(style.TooBox)}>
+            <p className={clsx(style.too)}>32M+</p>
+            <p className={clsx(style.TooText)}>
               we help to find your dream place
             </p>
           </div>
         </div>
       </div>
 
-
-
-      <div className="sm:mt-[20vh] mt-[20vh] mmmd:mt-[-10vh]">
+      <div className="sm:mt-[20vh] mt-[20vh]">
         <p className={clsx(style.jijigTit)}>top destination</p>
         <p className={clsx(style.TomTit)}>Discover your love</p>
         <div className={clsx(style.Cards)}>
