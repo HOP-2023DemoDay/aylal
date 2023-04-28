@@ -4,7 +4,7 @@
 //   theme: {
 //     extend: {
 //       fontFamily: {
-//         Poppins: 'Poppins, sans-serif',
+//         Poppins: "Poppins, sans-serif",
 //       },
 //     },
 //   },
@@ -31,23 +31,11 @@ module.exports = {
         White: "#F8F8F8",
       },
       screens: {
-<<<<<<< HEAD
-        smm: { min: "0px", max: "639px" },
-        smmsm: { min: "0px", max: "767px" },
-        smmsmm: { min: "320px", max: "375px" },
-        sm: { min: "640px", max: "767px" },  
-        md: { min: "768px", max: "1024px" },
-        smmmd: { min: "640px", max: "1023px" },
-        lg: { min: "1024px", max: "1279px" },
-        xl: { min: "1280px", max: "1535px" },
-        Txl: { min: "1536px" },
-=======
         sm: { min: "640px", max: "767px" },
-        md: { min: "768px", max: "1023px" },
+        md: { min: "768px", max: "1024px" },
         lg: { min: "1024px", max: "1279px" },
         xl: { min: "1280px", max: "1535px" },
         "2xl": { min: "1536px" },
->>>>>>> main
       },
     },
   },
