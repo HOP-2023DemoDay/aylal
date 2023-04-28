@@ -101,25 +101,25 @@ export const Sign = () => {
   };
 
   return (
-    <div className="w-screen h-screen flex justify-evenly items-center bg-White">
+    <div className="w-screen h-[104.5vh] flex justify-evenly overflow-hidden items-center bg-White  mt-[-15vh] lg:h-[115vh] md:h-[115vh] sm:h-[115vh] ">
       <div className="w-auto h-[576px]">
         <Link
           to="/"
           className="rounded-full w-auto h-auto bg-transparent flex justify-center items-center"
         >
-          <img src={arrow} className="w-[45px] h-[45px]" alt="" />
+          <img src={arrow} className="w-[45px] h-[45px]  " alt="" />
         </Link>
       </div>
-      <div className="mt-[70px]">
+      <div className="mt-[70px] lg:ml-[-95vw] md:ml-[-110vw] sm:ml-[-110vw] ml-[-180vw] ">
         <Lottie
           height={700}
           width={700}
           options={defaultOptions}
           isClickToPauseDisabled={true}
         />
-      </div>
-      <div className="gap-[20px] flex flex-col">
-        <div className="flex flex-row justify-center items-center gap-[10px]">
+      </div >
+      <div className="gap-[20px] flex flex-col md:mt-[15vh] sm:mt-[20vh]">
+        <div className="flex flex-row justify-center items-center gap-[10px] ">
           <button
             className="flex flex-col gap-[8px] justify-center text-Poppins items-center"
             onClick={() => setPerson(true)}

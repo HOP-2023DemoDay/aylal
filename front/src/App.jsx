@@ -5,6 +5,7 @@ import Hutulbur from "./pages/Hutulbur";
 import CompanyInfo from "./pages/CompanyInfo";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
+import Sign from "./pages/Sign";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Sign } from "./pages/Sign";
