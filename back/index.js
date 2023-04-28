@@ -16,9 +16,6 @@ app.use(express.urlencoded({ limit: "25mb", extended: true }));
 const userRouter = require("./routes/userRoute");
 const companyRouter = require("./routes/companyUserRoute");
 
-const userRouter = require("./routes/userRoute");
-const companyRouter = require("./routes/companyUserRoute");
-
 app.use(express.json());
 const corsOptions = {
   origin: "http://localhost:3000",

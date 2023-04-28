@@ -73,7 +73,7 @@ export const Hutulbur = () => {
           
           <div>
           <img src={Map} className="w-full h-[46vh] bg-slate-900 md:h-[34vh] md: w-[40vh]" alt="Map" />
-          <div className="xl:w-[29vw] xl:h-[8vh]  lg:h-[16vh] md:h-[16vh] xl:mt-[3vh]">
+          {/* <div className="xl:w-[29vw] xl:h-[8vh]  lg:h-[16vh] md:h-[16vh] xl:mt-[3vh]">
             <div className={clsx(style.box)}> 
             <p className="">Address :</p>
             <input type="text" placeholder="JL.Cindelaras No.205A" name="" id="" />
@@ -86,7 +86,7 @@ export const Hutulbur = () => {
             <p>Phone :</p>
             <input type="text" placeholder="+62 1234 432 567" name="" id="" />
             </div>
-            </div>
+            </div> */}
           </div>
 
 
