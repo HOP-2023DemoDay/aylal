@@ -8,7 +8,7 @@ import img from "../img/companyImg.svg"
 import pagearr from "../img/pagearr.svg"
 
 const style = {
-  people: "2xl:w-[40px] 2xl:h-[40px] xl:w-[40px] xl:h-[40px] lg:w-[40px] lg:h-[40px] md:w-[30px] md:h-[30px] md:ml-[-3vw]  w-[26px] h-[26px] ml-[-5vw] bg-DarkText rounded-full",
+  people: "2xl:w-[40px] 2xl:h-[40px] 2xl:ml-[-2vw] xl:w-[40px] xl:h-[40px] xl:ml-[-2vw] lg:w-[40px] lg:h-[40px] md:w-[30px] md:h-[30px] md:ml-[-3vw]  w-[26px] h-[26px] ml-[-5vw] bg-DarkText rounded-full",
   box: "flex justify-between w-[281px] mt-[2vh]",
 };
 
@@ -19,13 +19,13 @@ export const CompanyInfo = () => {
       <img src={img} alt="img" className="w-screen h-[20vh] object-cover" />
       <button><img src={pagearr} alt="arrow" onClick = {() => {console.log("first")}} className="h-10 mt-[-30vh] ml-[2vw]" /></button>
       <div className="w-screen flex justify-around mt-[-9vh]">
-        <p className="font-Poppins font-bold text-[22px] text-white ml-[-16vw] md:text-[28px] md:text-[24px]">CompanyName</p>
+        <p className="font-Poppins font-bold text-[22px] text-white 2xl:text-[50px] ml-[-16vw] md:text-[28px] md:text-[24px]">CompanyName</p>
         <div className="w-[15vw] flex justify-between mr-[-20vw]">
           <div className="w-[90px] ml-[-5vw]">
-          <p className="font-Poppins font-light text-[22px] ml-[-22vw] opacity-50 text-white md:text-[25px] md:ml-[-8vw]">144</p>
-          <img src={star} alt="start" className="w-[22px] h-[22px] ml-[-12vw] opacity-50 ml-[40px] md:w-[20px] md:h-[20px] md:ml-[-2vw] mt-[-3vh]"/>
+          <p className="2xl:ml-[5vw] xl:ml-[-0.5vw] lg:ml-[-1vw] md:ml-[0.5vw] font-Poppins font-light text-[22px] ml-[-22vw] opacity-50 text-white">144</p>
+          <img src={star} alt="start" className="w-[22px] lg:ml-[-3vw] 2xl:ml-[7vw] h-[22px] ml-[-12vw] opacity-50 ml-[40px] md:w-[20px] md:h-[20px] md:ml-[-2vw] mt-[-3vh]"/>
           </div>
-          <div className="w-[140px] flex ml-[-10vw]">
+          <div className="w-[140px] flex ml-[-10vw] lg:ml-[10vw] md:ml-[10vw]">
             <img src={hun} alt="hun" className={clsx(style.people)}/>
             <img src={hun} alt="hun" className={clsx(style.people)}/>
             <img src={hun} alt="hun" className={clsx(style.people)}/>
@@ -35,11 +35,11 @@ export const CompanyInfo = () => {
         </div>
       </div>
       </div>
-      <div className="mt-[16vh] w-screen flex justify-around md:mt-[10vh]">
+      <div className="2xl:mt-[20vh] xl:mt-[20vh] lg:mt-[20vh] lg:px-[3vw] md:mt-[20vh] md:px-[5vw] w-screen flex justify-around md:mt-[10vh] mt-[20vh]">
 
-        <div className="w-1/3 mt-[2vh] ml-[-5vw]">
-        <p className="text-[26px] font-Poppins mt-[-10vh] text-DarkText font-bold lg:text-[26px] md:text-[24px] ">Get in touch</p>
-        <p className="w-[90vw] mr-[10vw] font-Poppins font-light text-[10px] xl:text-[14px] text-center mt-[2vh] lg:mt-[1vh] md:text-[10px] lg:text-[12px] ">
+        <div className="w-1/2 2xl:ml-[15vw] xl:ml-[10vw]">
+        <p className="text-[26px] font-Poppins mt-[-10vh] text-DarkText font-bold lg:text-[26px] md:text-[24px] 2xl:text-[40px] ">Get in touch</p>
+        <p className="mr-[10vw] font-Poppins font-light text-[10px] xl:text-[14px] text-center mt-[2vh] lg:mt-[1vh] md:text-[10px] lg:text-[12px] 2xl:text-[20px] w-screen">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Exercitationem facere voluptatum ab, cum fugiat asperiores amet sit
           tenetur maiores unde! In omnis corporis, natus veniam aliquid nesciunt
@@ -82,9 +82,9 @@ export const CompanyInfo = () => {
         </p>
         </div>
 
-        <div className="w-1/3 ">
-          <img src={Map} className="w-screen ml-[-40vw] h-[46vh] bg-slate-900 md:w-[35vw] mt-[70vh]" alt="Map" />
-          <div className="w-[29vw] grid grid-cols-2  xl:grid-cols-1 lg:grid-cols-1 md:grid-cols-1 mt-[3vh]">
+        <div className="w-1/2">
+          <img src={Map} className="h-[46vh] 2xl:mt-[-10vh] mt-[48vh]" alt="Map" />
+          <div className="w-[29vw] grid grid-cols-2 xl:grid-cols-1 lg:grid-cols-1 md:grid-cols-1 mt-[3vh]">
             <div className={clsx(style.box)}> 
             <p className="">Address :</p>
             <input type="text" placeholder="JL.Cindelaras No.205A" name="" id="" />
