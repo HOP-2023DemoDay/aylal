@@ -4,6 +4,7 @@ import LandingPage from "./pages/LandingPage";
 import Hutulbur from "./pages/Hutulbur";
 import CompanyInfo from "./pages/CompanyInfo";
 import Home from "./pages/Home";
+import Sign from "./pages/Sign";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Sign } from "./pages/Sign";

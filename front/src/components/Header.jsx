@@ -23,7 +23,7 @@ export const Header = () => {
   ];
   return (
     <div
-      className={`flex flex-row items-center justify-between w-full md:pl-5 md:pr-5 lg:pl-10 lg:pr-10 xl:pl-20 xl:pr-20 2xl:pl-20 2xl:pr-20 fixed font-Poppins sm:text-xs smm:text-xs md:text-sm ${
+      className={`flex flex-row items-center justify-between  w-full md:pl-5 md:pr-5 lg:pl-10 lg:pr-10 xl:pl-20 xl:pr-20 2xl:pl-20 2xl:pr-20 absolute font-Poppins sm:text-xs smm:text-xs md:text-sm ${
         pathname === "/" ? "text-white" : "text-black"
       }`}
     >
