@@ -6,6 +6,7 @@ import CompanyInfo from "./pages/CompanyInfo";
 import Home from "./pages/Home";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { Sign } from "./pages/Sign";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/CompanyInfo" element={<CompanyInfo />}></Route>
         <Route path="/Hutulbur" element={<Hutulbur />}></Route>
         <Route path="/CompanyInfo" element={<CompanyInfo />}></Route>
+        <Route path="/Sign" element={<Sign />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>

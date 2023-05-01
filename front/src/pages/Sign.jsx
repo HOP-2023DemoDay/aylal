@@ -1,35 +1,110 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useState } from "react";
 import arrow from "../img/arrow.svg";
 import Lottie from "react-lottie";
 import * as animationData from "../img/sign.json";
 import showpng from "../img/show.svg";
 import hidepng from "../img/hide.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 export const Sign = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData,     
+    animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
 
+  const navigate = useNavigate();
 
-
-
-  
   const [person, setPerson] = useState(true);
   const [signin, setSignin] = useState(true);
   const [hide, setHide] = useState(false);
+
+  const email = useRef();
+  const password = useRef();
+  const username = useRef();
+
+  const buttonclick = () => {
+    if (signin === true) {
+      if (person === true) {
+        axios
+          .post("http://localhost:8000/users/signin", {
+            password: password.current.value,
+            email: email.current.value,
+          })
+          .then(function (response) {
+            if (response.status === 201) {
+              navigate("/");
+            }
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      } else {
+        axios
+          .post("http://localhost:8000/companyusers/signin", {
+            password: password.current.value,
+            businessEmail: email.current.value,
+          })
+          .then(function (response) {
+            if (response.status === 201) {
+              navigate("/");
+            }
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      }
+    } else {
+      if (person === true) {
+        axios
+          .post("http://localhost:8000/users/signup", {
+            password: password.current.value,
+            email: email.current.value,
+            username: username.current.value,
+          })
+          .then(function (response) {
+            if (response.status === 201) {
+              console.log("nice");
+              setSignin(true);
+            }
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      } else {
+        axios
+          .post("http://localhost:8000/companyusers/signup", {
+            password: password.current.value,
+            businessEmail: email.current.value,
+            companyName: username.current.value,
+          })
+          .then(function (response) {
+            if (response.status === 201) {
+              console.log("nice");
+              setSignin(true);
+            }
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      }
+    }
+  };
 
   return (
     <div className="w-screen h-screen flex justify-evenly items-center bg-White">
       <div className="w-auto h-[576px]">
         <Link
-          to="/Home"
+          to="/"
           className="rounded-full w-auto h-auto bg-transparent flex justify-center items-center"
         >
           <img src={arrow} className="w-[45px] h-[45px]" alt="" />
@@ -81,13 +156,7 @@ export const Sign = () => {
             </p>
           </button>
         </div>
-        <div
-          className={`w-[687px] h-[576px] content-evenly bg-white rounded-[24px] flex flex-col justify-start items-center ${
-            signin === false && person === false
-              ? "p-[15px] gap-0"
-              : "gap-[20px] p-[30px]"
-          }`}
-        >
+        <div className="w-[687px] h-[576px] gap-[20px] p-[30px] content-evenly bg-white rounded-[24px] flex flex-col justify-start items-center">
           <div className="flex">
             <button
               className={`w-[302px] h-[56px] bg-GreenText rounded-l-[15px] text-white font-Poppins font-500 text-[25px] ${
@@ -109,12 +178,8 @@ export const Sign = () => {
           <p className="font-500 text-[32px] text-GreenText font-Poppins">
             {signin === true ? "Sign in" : "Sign up "}
           </p>
-          <div
-            className={`flex flex-col ${
-              signin === false && person === false ? "gap-4" : "gap-7"
-            }`}
-          >
-            <div
+          <div className="flex flex-col gap-4">
+            {/* <div
               className={`flex-col items-start ${
                 signin === false && person === false ? "flex" : "hidden"
               }`}
@@ -125,21 +190,11 @@ export const Sign = () => {
               >
                 Company name
               </p>
-              <input className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl" />
-            </div>
-            <div
-              className={`flex-col items-start ${
-                signin === false && person === false ? "flex" : "hidden"
-              }`}
-            >
-              <p
-                className="font-400 text-[16px] font-Poppins text-SmallGrayText"
-                type="email"
-              >
-                Ажлын чиг үүрэг
-              </p>
-              <input className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl" />
-            </div>
+              <input
+                className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl"
+                ref={username}
+              />
+            </div> */}
             <div className="flex flex-col items-start">
               <p
                 className="font-400 text-[16px] text-SmallGrayText font-Poppins"
@@ -149,20 +204,26 @@ export const Sign = () => {
                   ? "Business email"
                   : "Email"}
               </p>
-              <input className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl" />
+              <input
+                className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl"
+                ref={email}
+              />
             </div>
             <div
               className={`flex-col items-start ${
                 signin === true ? "hidden" : "flex"
-              } ${signin === false && person === false ? "hidden" : "flex"}`}
+              } `}
             >
               <p
                 className="font-400 text-[16px] font-Poppins text-SmallGrayText"
                 type="text"
               >
-                Username
+                {person === true ? "Username" : "Company name"}
               </p>
-              <input className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl" />
+              <input
+                className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl"
+                ref={username}
+              />
             </div>
             <div className="flex flex-col items-start">
               <div className="flex w-full justify-between">
@@ -186,9 +247,13 @@ export const Sign = () => {
               <input
                 className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl"
                 type={hide === true ? "password" : "text"}
+                ref={password}
               />
             </div>
-            <button className="w-[459px] h-[56px] bg-Button font-Poppins rounded-full font-400 text-white text-[25px] text-GreenText">
+            <button
+              className="w-[459px] h-[56px] bg-Button font-Poppins rounded-full font-400 text-white text-[25px] text-GreenText"
+              onClick={buttonclick}
+            >
               {signin === true ? "Sign in" : "Sign up"}
             </button>
           </div>
