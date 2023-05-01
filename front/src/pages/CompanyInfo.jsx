@@ -8,13 +8,16 @@ import img from "../img/companyImg.svg"
 import pagearr from "../img/pagearr.svg"
 
 const style = {
-  people: "2xl:w-[40px] 2xl:h-[40px] 2xl:ml-[-2vw] xl:w-[40px] xl:h-[40px] xl:ml-[-2vw] lg:w-[40px] lg:h-[40px] md:w-[30px] md:h-[30px] md:ml-[-3vw]  w-[26px] h-[26px] ml-[-5vw] bg-DarkText rounded-full",
+  people: "2xl:w-[40px] 2xl:h-[40px] 2xl:ml-[-2vw] xl:w-[40px] xl:h-[40px] xl:ml-[-2vw] lg:w-[40px] lg:h-[40px] lg:ml-[-3vw] md:w-[30px] md:h-[30px] md:ml-[-3vw] w-[26px] h-[26px] ml-[-6vw] bg-DarkText rounded-full",
   box: "flex justify-between w-[281px] mt-[2vh]",
+  too: "2xl:ml-[5vw] 2xl:text-[35px] xl:ml-[-0.5vw] lg:ml-[-1vw] md:ml-[0.5vw] font-Poppins font-light text-[22px] ml-[-22vw] opacity-50 text-white",
+  star: "2xl:w-[35px] 2xl:h-[35px] 2xl:ml-[7vw] xl:ml-[2vw] w-[22px] lg:ml-[3vw] h-[22px] ml-[-12vw] opacity-50 ml-[-10vw] md:w-[20px] md:h-[20px] md:ml-[5vw] mt-[-3vh]",
+  Text: " ml-[5vw] mr-[3vw] font-Poppins font-light text-[10px] xl:text-[14px] text-center md:ml-[-2vw] md:w-[90vw] mt-[2vh] lg:mt-[1vh] md:text-[10px] lg:text-[12px] 2xl:text-[20px] 2xl:ml-[10vw] 2xl:w-[40vw] xl:w-[45vw] lg:w-[40vw] w-[90vw] mb-[20vh]",
 };
 
 export const CompanyInfo = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden w-screen">
       <div>
       <img src={img} alt="img" className="w-screen h-[20vh] object-cover" />
       <button><img src={pagearr} alt="arrow" onClick = {() => {console.log("first")}} className="h-10 mt-[-30vh] ml-[2vw]" /></button>
@@ -22,10 +25,10 @@ export const CompanyInfo = () => {
         <p className="font-Poppins font-bold text-[22px] text-white 2xl:text-[50px] ml-[-16vw] md:text-[28px] md:text-[24px]">CompanyName</p>
         <div className="w-[15vw] flex justify-between mr-[-20vw]">
           <div className="w-[90px] ml-[-5vw]">
-          <p className="2xl:ml-[5vw] xl:ml-[-0.5vw] lg:ml-[-1vw] md:ml-[0.5vw] font-Poppins font-light text-[22px] ml-[-22vw] opacity-50 text-white">144</p>
-          <img src={star} alt="start" className="w-[22px] lg:ml-[-3vw] 2xl:ml-[7vw] h-[22px] ml-[-12vw] opacity-50 ml-[40px] md:w-[20px] md:h-[20px] md:ml-[-2vw] mt-[-3vh]"/>
+          <p className={clsx(style.too)}>144</p>
+          <img src={star} alt="start" className={clsx(style.star)}/>
           </div>
-          <div className="w-[140px] flex ml-[-10vw] lg:ml-[10vw] md:ml-[10vw]">
+          <div className="w-[140px] flex ml-[-5vw] lg:ml-[10vw] md:ml-[10vw]">
             <img src={hun} alt="hun" className={clsx(style.people)}/>
             <img src={hun} alt="hun" className={clsx(style.people)}/>
             <img src={hun} alt="hun" className={clsx(style.people)}/>
@@ -35,11 +38,11 @@ export const CompanyInfo = () => {
         </div>
       </div>
       </div>
-      <div className="2xl:mt-[20vh] xl:mt-[20vh] lg:mt-[20vh] lg:px-[3vw] md:mt-[20vh] md:px-[5vw] w-screen flex justify-around md:mt-[10vh] mt-[20vh]">
+      <div className="2xl:mt-[20vh] 2xl:px-[5vw] xl:mt-[10vh] lg:mt-[10vh] lg:px-[5vw] md:mt-[5vh] md:px-[5vw] flex justify-around md:mt-[10vh] mt-[10vh] ml-[-3vw]">
 
-        <div className="w-1/2 2xl:ml-[15vw] xl:ml-[10vw]">
-        <p className="text-[26px] font-Poppins mt-[-10vh] text-DarkText font-bold lg:text-[26px] md:text-[24px] 2xl:text-[40px] ">Get in touch</p>
-        <p className="mr-[10vw] font-Poppins font-light text-[10px] xl:text-[14px] text-center mt-[2vh] lg:mt-[1vh] md:text-[10px] lg:text-[12px] 2xl:text-[20px] w-screen">
+        <div className="w-1/2 2xl:mr-[5vw] 2xl:ml-[-5vw] xl:ml-[10vw] md:ml-[5vw] ml-[5vw]">
+        <p className="text-[26px] ml-[5vw] font-Poppins text-DarkText font-bold lg:text-[26px] md:ml-[-5vw] md:text-[24px] 2xl:text-[40px] 2xl:ml-[10vw] md:ml-[0vw] ">Get in touch</p>
+        <p className={clsx(style.Text)} >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Exercitationem facere voluptatum ab, cum fugiat asperiores amet sit
           tenetur maiores unde! In omnis corporis, natus veniam aliquid nesciunt
@@ -82,11 +85,11 @@ export const CompanyInfo = () => {
         </p>
         </div>
 
-        <div className="w-1/2">
-          <img src={Map} className="h-[46vh] 2xl:mt-[-10vh] mt-[48vh]" alt="Map" />
-          <div className="w-[29vw] grid grid-cols-2 xl:grid-cols-1 lg:grid-cols-1 md:grid-cols-1 mt-[3vh]">
+        <div className="w-1/2 md:mt-[40vh] mt-[70vh] 2xl:mt-[5vh] 2xl:ml-[5vh] xl:mt-[5vh] lg:mt-[5vh] ">
+          <img src={Map} className="2xl:w-[30vw] 2xl:h-[30vw] ml-[-42vw] xl:ml-[1vw] h-[30vh] w-[] md:ml-[-45vw] md:h-[40vw] 2xl:mt-[-10vh] xl:mt-[-5vh] 2xl:ml-[1vw] xl:h-[30vw]" alt="Map" />
+          <div className="w-[29vw] grid grid-cols-1 2xl:grid-cols-2 ml-[-42vw] 2xl:ml-[1vw] md:mt-[-30vw] md:mb-[20vw] xl:ml-[0vh] mt-[3vh] lg:ml-[0vw] md:ml-[0vw]">
             <div className={clsx(style.box)}> 
-            <p className="">Address :</p>
+            <p>Address :</p>
             <input type="text" placeholder="JL.Cindelaras No.205A" name="" id="" />
             </div>
             <div className={clsx(style.box)}>
