@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Sign from "./pages/Sign";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
-import { Sign } from "./pages/Sign";
+
 
 const App = () => {
   return (
