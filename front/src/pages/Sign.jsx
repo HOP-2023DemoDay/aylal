@@ -21,7 +21,7 @@ export const Sign = () => {
   const navigate = useNavigate();
 
   const [person, setPerson] = useState(true);
-  const [signin, setSignin] = useState(true);
+  const [signin, setSignin] = useState(true);           
   const [hide, setHide] = useState(false);
 
   const email = useRef();
@@ -202,7 +202,7 @@ export const Sign = () => {
                 ref={username}
               />
             </div> */}
-              <input className="h-[56px] xl:w-[459px] 2xl:w-[459px] lg:w-[459px] md:w-[439px] sm:w-[419px] border-slate-300 border-2 rounded-2xl w-[215px]" />
+              {/* <input className="h-[56px] xl:w-[459px] 2xl:w-[459px] lg:w-[459px] md:w-[439px] sm:w-[419px] border-slate-300 border-2 rounded-2xl w-[215px]" /> */}
             <div className="flex flex-col items-start">
               <p
                 className="font-400 text-[16px] text-SmallGrayText font-Poppins"
@@ -272,3 +272,15 @@ export const Sign = () => {
 };
 
 export default Sign;
+
+
+
+
+
+
+
+
+
+
+
+
