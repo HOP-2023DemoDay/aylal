@@ -9,7 +9,7 @@ const express = require("express");
 const cors = require("cors");
 const port = process.env.PORT || 8000;
 const app = express();
-const hutulburRouter = require("./route/hutulburRoute");
+const hutulburRouter = require("./routes/hutulburRoute");
 
 app.use(express.json({ limit: "25mb" }));
 app.use(express.urlencoded({ limit: "25mb", extended: true }));
