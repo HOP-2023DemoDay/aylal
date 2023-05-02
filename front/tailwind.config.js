@@ -27,6 +27,7 @@ module.exports = {
         MediumGrayText: "#696969",
         SmallGrayText: "#666666",
         Button: "#43B97F",
+        ButtonHover: "#298933",
         Black: "#141414",
         White: "#F8F8F8",
       },
