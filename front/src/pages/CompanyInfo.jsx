@@ -19,7 +19,7 @@ export const CompanyInfo = () => {
   return (
     <div className="overflow-hidden w-screen">
       <div>
-      <img src={img} alt="img" className="w-screen h-[20vh] object-cover" />
+      <img src={img} alt="img" className="w-screen h-[20vh] object-cover " />
       <button><img src={pagearr} alt="arrow" onClick = {() => {console.log("first")}} className="h-10 mt-[-30vh] ml-[2vw]" /></button>
       <div className="w-screen flex justify-around mt-[-9vh]">
         <p className="font-Poppins font-bold text-[22px] text-white 2xl:text-[50px] ml-[-16vw] md:text-[28px] md:text-[24px]">CompanyName</p>
@@ -40,8 +40,8 @@ export const CompanyInfo = () => {
       </div>
       <div className="2xl:mt-[20vh] 2xl:px-[5vw] xl:mt-[10vh] lg:mt-[10vh] lg:px-[5vw] md:mt-[5vh] md:px-[5vw] flex justify-around md:mt-[10vh] mt-[10vh] ml-[-3vw]">
 
-        <div className="w-1/2 2xl:mr-[5vw] 2xl:ml-[-5vw] xl:ml-[10vw] md:ml-[5vw] ml-[5vw]">
-        <p className="text-[26px] ml-[5vw] font-Poppins text-DarkText font-bold lg:text-[26px] md:ml-[-5vw] md:text-[24px] 2xl:text-[40px] 2xl:ml-[10vw] md:ml-[0vw] ">Get in touch</p>
+        <div className="w-1/2 2xl:mr-[5vw] 2xl:ml-[-5vw] xl:ml-[5vw] md:ml-[5vw] ml-[5vw]">
+        <p className="text-[26px] ml-[5vw] font-Poppins text-DarkText font-bold lg:text-[26px] md:ml-[-5vw] md:text-[24px] 2xl:text-[40px] 2xl:ml-[10vw] md:ml-[0vw]">Get in touch</p>
         <p className={clsx(style.Text)} >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Exercitationem facere voluptatum ab, cum fugiat asperiores amet sit
@@ -86,7 +86,7 @@ export const CompanyInfo = () => {
         </div>
 
         <div className="w-1/2 md:mt-[40vh] mt-[70vh] 2xl:mt-[5vh] 2xl:ml-[5vh] xl:mt-[5vh] lg:mt-[5vh] ">
-          <img src={Map} className="2xl:w-[30vw] 2xl:h-[30vw] ml-[-42vw] xl:ml-[1vw] h-[30vh] w-[] md:ml-[-45vw] md:h-[40vw] 2xl:mt-[-10vh] xl:mt-[-5vh] 2xl:ml-[1vw] xl:h-[30vw]" alt="Map" />
+          <img src={Map} className=" w-[90vw] 2xl:w-[35vw] 2xl:h-[30vw] ml-[-42vw] xl:ml-[1vw] h-[30vh] lg:ml-[0vw] md:ml-[-45vw] md:h-[40vw] 2xl:mt-[-10vh] xl:mt-[-5vh] 2xl:ml-[1vw] xl:h-[30vw]" alt="Map" />
           <div className="w-[29vw] grid grid-cols-1 2xl:grid-cols-2 ml-[-42vw] 2xl:ml-[1vw] md:mt-[-30vw] md:mb-[20vw] xl:ml-[0vh] mt-[3vh] lg:ml-[0vw] md:ml-[0vw]">
             <div className={clsx(style.box)}> 
             <p>Address :</p>
@@ -104,7 +104,7 @@ export const CompanyInfo = () => {
         </div>
 
       </div>
-      <div className="w-screen flex sm:flex-wrap overflow-x-auto mt-[5vh]">
+      <div className="w-screen flex sm:flex-wrap overflow-x-auto mt-[5vh] 2xl:mt-[-10vh] xl:mt-[-10vh] lg:mt-[-10vh] md:mt-[0vh]">
         <Hutulbur />
         <Hutulbur />
         <Hutulbur />

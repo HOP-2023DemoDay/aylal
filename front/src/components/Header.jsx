@@ -1,7 +1,19 @@
-import React from "react";
+import {React,useState} from "react";
 import { Link, useLocation } from "react-router-dom";
+import drop from "../img/hun.png"
 
 export const Header = () => {
+
+    const [toggleDrop, setToggleDrop] = useState(false);
+  const styles = {
+    drop: {
+      backgroundImage: `url(${drop})`,
+      height: "70px",
+      width: "70px",
+      marginTop: "50px",
+    },
+  };
+
   const { pathname } = useLocation();
   const headerPages = [
     {
@@ -40,22 +52,34 @@ export const Header = () => {
           </Link>
         ))}
       </div>
-      <div className="flex gap-x-1">
-        <button
-          className={`font-bold 2xl:text-[20px] xl:text-[20px] lg:text-[16px] md:text-[16px text-[10px] ${
-            pathname === "/" ? "text-white" : "text-black"
-          }`}
-        >
-          Logout
-        </button>
-        <button
-          className={`font-bold 2xl:text-[20px] xl:text-[20px] lg:text-[16px] md:text-[16px text-[10px] ${
-            pathname === "/" ? "text-white" : "text-black"
-          }`}
-        >
-          Username
-        </button>
-      </div>
+      <div>
+           <button
+            onClick={() => {
+              setToggleDrop(!toggleDrop);
+              console.log(toggleDrop);
+            }}
+            className="sm:hidden flex bg-repeat"
+            style={styles.drop}
+          ></button>
+          {toggleDrop ? (
+            <div className="w-[180px] h-[150px] mt-[20px] flex flex-col justify-between">
+         
+          <Link
+            to="/Profile"
+            className="text-sm    flex "
+          >
+            Profile
+          </Link>
+          <hr />
+           <Link to="/Login" className="text-sm  font-normal">
+            Log out
+          </Link>
+          <hr />
+            </div>
+          ) : (
+            ""
+          )}
+        </div>
     </div>
   );
 };
