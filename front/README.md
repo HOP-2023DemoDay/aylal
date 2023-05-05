@@ -1,24 +1,29 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=60&duration=3000&pause=500&color=1CF712&background=F2FFEF00&center=true&vCenter=true&multiline=true&width=950&height=100&lines=Welcome+to+our+website+!%F0%9F%98%8A)](https://git.io/typing-svg)
 
-## Name
+# Name
 
-Манай сайт нь аялалын сайт бөгөөд хэрэглэгчидээ ерөнхийд нь аялагч болон компани гэж хоёр хуваана. 
+## Tbale if Contents
 
-#### Давуу тал : 
+-introduction
+-project structure
+-run slide content
 
-1. аялагчид /та бүхний/  өөрсдийн хүссэн шаардлагын дагуу хайлт хийн  гадаад болон дотоодын аялалуудаас хялбар аргаар аялалаа хайх боломжтой.
-2. компаниуд үнэ төлбөргүйгээр манай сайтыг ашиглан өөрсдийн суртчилгаагаа хийх боломжтой.
+### start frontend
 
-#### Сул тал:
+npm i
 
-1. Программ хангамж талаасаа алдаа гарч магадгүй
-2. Өрсөлдөгч сайтуудтай  
+npm start
+
+### start backend
+
+nodemon i
+
+nodemon index.js
+
 
 ### Бидний тухай:
 
 - pinecone academy-ийн сурагчдын demo day санаа
-- зөвлөх багш П.Дөлгөөн
-- багийн гишүүд : Нацагдорж, Мөнхлөн, Оюу-Эрдэнэ, Тэмүүлэн, Мишээл
 
 ### Бидний ашигласан хэлүүд:
 
@@ -33,13 +38,3 @@
 
 + [Figma](https://www.figma.com/file/u2sjdyeaq0X5XgHp9TDEdG/Untitled?t=Kp3o7kvHBqtdxOZh-6)
 
-
-### Хэрэглэгчидийн бидэнд хийж өгч туслах зүйлс.
-
-+ компаниуд өөрсдийн аялалын хөтөлбөрүүдийг нэмж өгөх
-
-+ компаниуд  манай сайтыг үнэлж сэтгэгдэл бичэх
-
-+ аялагчид компаниудад үнэлгээ өгөх
-
-+ аялагчид манай сайтыг үнэлж сэтгэгдэл бичэх
