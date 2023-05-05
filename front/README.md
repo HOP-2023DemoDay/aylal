@@ -2,6 +2,62 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Figma
+
+link: [https://www.figma.com/file/u2sjdyeaq0X5XgHp9TDEdG/Untitled?t=Kp3o7kvHBqtdxOZh-6]
+
+## Name
+
+Манай сайт нь аялалын сайт бөгөөд хэрэглэгчидээ ерөнхийд нь аялагч болон компани гэж хоёр хуваана. 
+
+#### Давуу тал : 
+
+1. аялагчид /та бүхний/  өөрсдийн хүссэн шаардлагын дагуу хайлт хийн  гадаад болон дотоодын аялалуудаас хялбар аргаар аялалаа хайх боломжтой.
+2. компаниуд үнэ төлбөргүйгээр манай сайтыг ашиглан өөрсдийн суртчилгаагаа хийх боломжтой.
+
+#### Сул тал:
+
+1. Программ хангамж талаасаа алдаа гарч магадгүй
+2. Өрсөлдөгч сайтуудтай  
+
+### Бидний тухай:
+
+- pinecone academy-ийн сурагчдын demo day санаа
+- зөвлөх багш П.Дөлгөөн
+- багийн гишүүд : Нацагдорж, Мөнхлөн, Оюу-Эрдэнэ, Тэмүүлэн, Мишээл
+
+### Бидний ашигласан хэлүүд:
+
+* [JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
+* [Nodejs](https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js)
+* [React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
+* [material-ui](https://img.shields.io/badge/Material_UI-0081CB?style=flat-square&logo=mui&logoColor=white)
+* [C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c)
+* [HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+* [CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
+* [Bootstrap](https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=bootstrap)
+* [GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
+
+### Хэрэглэгчидийн бидэнд хийж өгч туслах зүйлс.
+
++ компаниуд өөрсдийн аялалын хөтөлбөрүүдийг нэмж өгөх
+
++ компаниуд  манай сайтыг үнэлж сэтгэгдэл бичэх
+
++ аялагчид компаниудад үнэлгээ өгөх
+
++ аялагчид манай сайтыг үнэлж сэтгэгдэл бичэх
+
+
+## Start
+
+Open [] () to view it in your browser.
+
+First you will see "Landing page"/
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
