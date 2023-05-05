@@ -101,16 +101,20 @@ export const Sign = () => {
   };
 
   return (
-    <div className="w-screen h-screen flex justify-evenly items-center bg-White">
+    <div className="w-screen h-[104.5vh] flex justify-evenly overflow-hidden items-center bg-White  mt-[-15vh] lg:h-[115vh] md:h-[115vh] sm:h-[115vh] ">
       <div className="w-auto h-[576px]">
         <Link
           to="/"
           className="rounded-full w-auto h-auto bg-transparent flex justify-center items-center"
         >
-          <img src={arrow} className="w-[45px] h-[45px]" alt="" />
+          <img
+            src={arrow}
+            className="w-[30px] h-[30px] 2xl:w-[45px] 2xl:h-[45px] xl:w-[45px] xl:h-[45px] lg:w-[45px] lg:h-[45px] md:w-[45px] md:h-[45px] sm:w-[45px] sm:h-[45px] "
+            alt=""
+          />
         </Link>
       </div>
-      <div className="mt-[70px]">
+      <div className="mt-[70px] 2xl:block xl:block lg:hidden  md:hidden  sm:hidden hidden 2xl:ml-[-30vw] xl:ml-[-10vw]">
         <Lottie
           height={700}
           width={700}
@@ -118,8 +122,9 @@ export const Sign = () => {
           isClickToPauseDisabled={true}
         />
       </div>
-      <div className="gap-[20px] flex flex-col">
-        <div className="flex flex-row justify-center items-center gap-[10px]">
+
+      <div className="gap-[20px] flex flex-col md:mt-[15vh] sm:mt-[20vh] ml-[-25vw] 2xl:ml-[-25vw] xl:ml-[-7.5vw] lg:ml-[-20vw] md:ml-[-14vw] sm:ml-[-10vw]  ">
+        <div className="flex flex-row justify-center items-center gap-[10px] xl:mt-[10vh] mt-[20vh]  xl:w-auto xl:mt-0 2xl:w-auto 2xl:mt-0 lg:w-auto lg:mt-20vh md:w-auto md:mt-0 sm:w-auto sm:mt-0 w-[295px]">
           <button
             className="flex flex-col gap-[8px] justify-center text-Poppins items-center"
             onClick={() => setPerson(true)}
@@ -156,10 +161,11 @@ export const Sign = () => {
             </p>
           </button>
         </div>
-        <div className="w-[687px] h-[576px] gap-[20px] p-[30px] content-evenly bg-white rounded-[24px] flex flex-col justify-start items-center">
-          <div className="flex">
+        {/* flex flex-col justify-center items-center */}
+        <div className="xl:w-[687px] gap-[0.7vw] 2xl:w-[687px] lg:w-[687px] md:w-[667px] sm:w-[647px] h-[576px] content-evenly 2xl:bg-white xl:bg-white lg:bg-white md:bg-white sm:bg-white rounded-[24px] flex flex-col justify-start items-center w-[275px]">
+          <div className="flex mt-[5vh]">
             <button
-              className={`w-[302px] h-[56px] bg-GreenText rounded-l-[15px] text-white font-Poppins font-500 text-[25px] ${
+              className={`xl:w-[302px] xl:text-[25px] 2xl:w-[302px] 2xl:text-[25px] lg:w-[302px] lg:text-[25px] md:w-[282px] md:text-[25px] sm:w-[242px] sm:text-[25px] h-[56px] bg-GreenText rounded-l-[15px] text-white font-Poppins font-500 text-[20px] w-[100px] ${
                 signin === true ? "opacity-50" : ""
               }`}
               onClick={() => setSignin(false)}
@@ -167,7 +173,7 @@ export const Sign = () => {
               Sign up
             </button>
             <button
-              className={`w-[302px] h-[56px] bg-GreenText rounded-r-[15px] font-Poppins text-white font-500 text-[25px] ${
+              className={`xl:w-[302px] xl:text-[25px] 2xl:w-[302px] 2xl:text-[25px] lg:w-[302px] lg:text-[25px] md:w-[282px]  md:text-[25px] sm:w-[242px] sm:text-[25px] h-[56px] bg-GreenText rounded-r-[15px] font-Poppins text-white font-500 text-[20px] w-[100px] ${
                 signin === true ? "" : "opacity-50"
               }`}
               onClick={() => setSignin(true)}
@@ -195,6 +201,7 @@ export const Sign = () => {
                 ref={username}
               />
             </div> */}
+            {/* <input className="h-[56px] xl:w-[459px] 2xl:w-[459px] lg:w-[459px] md:w-[439px] sm:w-[419px] border-slate-300 border-2 rounded-2xl w-[215px]" /> */}
             <div className="flex flex-col items-start">
               <p
                 className="font-400 text-[16px] text-SmallGrayText font-Poppins"
@@ -205,7 +212,7 @@ export const Sign = () => {
                   : "Email"}
               </p>
               <input
-                className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl"
+                className="h-[56px] xl:w-[459px] 2xl:w-[459px] lg:w-[459px] md:w-[439px] sm:w-[419px] border-slate-300 border-2 rounded-2xl w-[215px]"
                 ref={email}
               />
             </div>
@@ -221,7 +228,7 @@ export const Sign = () => {
                 {person === true ? "Username" : "Company name"}
               </p>
               <input
-                className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl"
+                className="h-[56px] xl:w-[459px] 2xl:w-[459px] lg:w-[459px] md:w-[439px] sm:w-[419px] border-2 rounded-2xl focus:outline-black font-2000 bg-[#C4C4C4] opacity-[30%] w-[215px]"
                 ref={username}
               />
             </div>
@@ -245,30 +252,17 @@ export const Sign = () => {
                 </button>
               </div>
               <input
-                className="h-[56px] w-[459px] border-slate-300 border-2 rounded-2xl"
+                className="h-[56px] xl:w-[459px] 2xl:w-[459px] lg:w-[459px] md:w-[439px] sm:w-[419px] border-slate-300 border-2 rounded-2xl w-[215px]"
                 type={hide === true ? "password" : "text"}
                 ref={password}
               />
             </div>
             <button
-              className="w-[459px] h-[56px] bg-Button font-Poppins rounded-full font-400 text-white text-[25px] text-GreenText"
+              className="xl:w-[459px] 2xl:w-[459px] lg:w-[459px] md:w-[439px] sm:w-[419px] h-[56px] bg-Button font-Poppins rounded-full font-400 text-white text-[25px] text-GreenText w-[215px]"
               onClick={buttonclick}
             >
               {signin === true ? "Sign in" : "Sign up"}
             </button>
-          </div>
-          <div
-            className={`justify-start items-center gap-3 w-[459px] ${
-              signin === false ? "hidden" : "flex"
-            }`}
-          >
-            <input
-              className="w-[24px] h-[24px] text-white accent-Button bg-white rounded-full"
-              type="checkbox"
-            />
-            <p className="font-400 text-[24px] font-Poppins text-MediumDarkText">
-              Remember me
-            </p>
           </div>
         </div>
       </div>
