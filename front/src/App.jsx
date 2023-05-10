@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { Sign } from "./pages/Sign";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/CompanyInfo" element={<CompanyInfo />}></Route>
         <Route path="/Hutulbur" element={<Hutulbur />}></Route>
         <Route path="/Profile" element={<Profile />}></Route>
+        <Route path="/Sign" element={<Sign />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
