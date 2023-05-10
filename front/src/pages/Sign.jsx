@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { useState } from "react";
-import arrow from "../img/arrow.svg";
 import Lottie from "react-lottie";
 import * as animationData from "../img/sign.json";
 import showpng from "../img/show.svg";
@@ -107,7 +106,6 @@ export const Sign = () => {
           to="/"
           className="rounded-full w-auto h-auto bg-transparent flex justify-center items-center"
         >
-          <img src={arrow} className="w-[30px] h-[30px] 2xl:w-[45px] 2xl:h-[45px] xl:w-[45px] xl:h-[45px] lg:w-[45px] lg:h-[45px] md:w-[45px] md:h-[45px] sm:w-[45px] sm:h-[45px] " alt="" />
         </Link>
       </div>
       <div className="mt-[70px] 2xl:block xl:block lg:hidden  md:hidden  sm:hidden hidden 2xl:ml-[-30vw] xl:ml-[-10vw]">
