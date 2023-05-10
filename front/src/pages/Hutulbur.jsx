@@ -3,6 +3,7 @@ import Arrow from "../img/Vector.png";
 import Lake from "../img/lake.png";
 import Mountain from "../img/mountain.png";
 import { Link } from "react-router-dom";
+import Map from '../img/map.png'
 
 export const Hutulbur = () => {
   return (
@@ -18,8 +19,8 @@ export const Hutulbur = () => {
           Tam an Nasional Bunaken
         </p>
       </div>
-      <div className="flex flex-row bg-white w-[100vw] h-auto p-[5vw]">
-        <div className="flex flex-col gap-5">
+      <div className="flex flex-row bg-white w-[100vw] justify-around h-auto p-[5vw]">
+        <div className="flex flex-col gap-5 w-[50%]">
           <p className="font-bold text-[1.5vw] font-Poppins">Get in touch</p>
           <div className="flex flex-col">
             <p className="h-auto w-[38vw] font-[400]">
@@ -55,7 +56,7 @@ export const Hutulbur = () => {
             </p>
           </div>
 
-          <img alt="" src={Lake} className="rounded-2xl" />
+          <img alt="" src={Lake} className="rounded-2xl w-[38vw]" />
           <div className="flex flex-col gap-3">
             <p className="font-normal text-[1.2vw] font-Poppins">Comment :</p>
             <input className="w-[37vw] h-[15vh] border-2 border-black rounded-xl focus:border-sky-500" />
@@ -64,7 +65,17 @@ export const Hutulbur = () => {
             </button>
           </div>
         </div>
-        <div></div>
+        <div className="flex flex-column w-[50%]">
+          <img alt="" src={Map} className="w-[80%] h-[50%] rounded-lg" />
+          <div>
+            <div>
+              <div>
+                <p>Address:</p>
+                <p>JL.Cindelaras No.205A</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
