@@ -1,109 +1,70 @@
 import React from "react";
 import Arrow from "../img/Vector.png";
-import Map from "../img/map.png";
 import Lake from "../img/lake.png";
-import News from "../components/news";
-import clsx from "clsx"
-
-const style = {
-  box: "flex justify-between w-[281px] mt-[2vh]",
-};
+import Mountain from "../img/mountain.png";
+import { Link } from "react-router-dom";
 
 export const Hutulbur = () => {
   return (
-    <div className="overflow-hidden w-screen  ">
-      <div className="flex felx-col w-full h-52 bg-slate-500 w-full">
-        <button onClick = {() => {console.log("first")}} className="h-10 mt-[3vh] ml-[2vw]"> <img src={Arrow} alt=""/></button>
-        <div className="font-bold text-[33.18px] mb-[2vh] text-white flex items-end">Taman Nasional Bunaken</div>
+    <div>
+      <div
+        className="bg-cover w-[100vw] h-[45vh] p-[5vw] flex flex-col gap-[2.5vw]"
+        style={{ backgroundImage: `url(${Mountain})` }}
+      >
+        <Link to="/">
+          <img alt="" src={Arrow} />
+        </Link>
+        <p className="font-Poppins font-bold text-white text-[2vw]">
+          Tam an Nasional Bunaken
+        </p>
       </div>
-
-      <div className="w-screen flex flex-row justify-around ">
-        <div className="flex flex-col w-1/3 2xl:w-[750px] 2xl:text-[20px] xl:w-[500px] lg:w-[380px] ml-[80px] text-center">
-          <div className="font-bold 2xl:text-[35px] ">
-            Get in touch
-          </div>
-          <div className="flex flex-row">
-            <div className="flex flex-col mt-8">
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                aliquam, purus sit amet luctus venenatis, lectus magna fringilla
-                urna, porttitor rhoncus dolor purus non enim praesent{" "}
-              </div>
-              <div>
-                elementum facilisis leo, vel fringilla est ullamcorper eget
-                nulla.
-              </div>
-            </div>
-          </div>
-          <div>
-            enim lobortis scelerisque fermentum dui faucibus in ornare quam
-            viverra orci sagittis eu volutpat odio facilisis mauris sit amet
-            massa vitae tortor condimentum lacinia quis vel eros donec ac odio
-            tempor orci dapibus ultrices in iaculis nunc sed augue lacus,
-            viverra vitae congue eu, consequat ac felis donec et odio
-            pellentesque diam volutpat commodo sed egestas egestas fringilla
-            fau.{" "}
-          </div>
-          <div>
-            enim lobortis scelerisque fermentum dui faucibus in ornare quam
-            viverra orci sagittis eu volutpat odio facilisis mauris sit amet
-            massa vitae tortor condimentum lacinia quis vel eros donec ac odio
-            tempor orci dapibus ultrices in iaculis nunc sed augue lacus,
-            viverra vitae congue eu, consequat ac felis donec et odio
-            pellentesque diam volutpat commodo sed egestas egestas fringilla
-            fau.
-          </div>
-          <div>
-            enim lobortis scelerisque fermentum dui faucibus in ornare quam
-            viverra orci sagittis eu volutpat odio facilisis mauris sit amet
-            massa vitae tortor condimentum lacinia quis vel eros donec ac odio
-            tempor orci dapibus ultrices in iaculis nunc sed augue lacus,
-            viverra vitae congue eu.
+      <div className="flex flex-row bg-white w-[100vw] h-auto p-[5vw]">
+        <div className="flex flex-col gap-5">
+          <p className="font-bold text-[1.5vw] font-Poppins">Get in touch</p>
+          <div className="flex flex-col">
+            <p className="h-auto w-[38vw] font-[400]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus non enim praesent elementum
+              facilisis leo, vel fringilla est ullamcorper eget nulla.
+            </p>
+            <p className="h-auto w-[38vw] font-[400] font-Poppins">
+              enim lobortis scelerisque fermentum dui faucibus in ornare quam
+              viverra orci sagittis eu volutpat odio facilisis mauris sit amet
+              massa vitae tortor condimentum lacinia quis vel eros donec ac odio
+              tempor orci dapibus ultrices in iaculis nunc sed augue lacus,
+              viverra vitae congue eu, consequat ac felis donec et odio
+              pellentesque diam volutpat commodo sed egestas egestas fringilla
+              fau.
+            </p>
+            <p className="h-auto w-[38vw] font-[400] font-Poppins">
+              enim lobortis scelerisque fermentum dui faucibus in ornare quam
+              viverra orci sagittis eu volutpat odio facilisis mauris sit amet
+              massa vitae tortor condimentum lacinia quis vel eros donec ac odio
+              tempor orci dapibus ultrices in iaculis nunc sed augue lacus,
+              viverra vitae congue eu, consequat ac felis donec et odio
+              pellentesque diam volutpat commodo sed egestas egestas fringilla
+              fau.
+            </p>
+            <p className="h-auto w-[38vw] font-[400] font-Poppins">
+              enim lobortis scelerisque fermentum dui faucibus in ornare quam
+              viverra orci sagittis eu volutpat odio facilisis mauris sit amet
+              massa vitae tortor condimentum lacinia quis vel eros donec ac odio
+              tempor orci dapibus ultrices in iaculis nunc sed augue lacus,
+              viverra vitae congue eu.
+            </p>
           </div>
 
-          <img src={Lake} alt="" />
-
-          <div>
-          <div className="text-start">Comment:</div>
-          <textarea
-            type="text"
-            className="rounded-lg xl:h-[250px] border-2 xl:pt-[-20vh] xl:pb-[20vh] xl:text-[20px] xl:w-[500px] lg:h-[200px] lg:w-[370px] md:h-[150px] md:w-[270px]"
-          ></textarea>
-          <button className="rounded-[8px] w-[120px] h-[40px] text-white text-[16px] font-bold bg-Button mt-[4vh]">Send</button>
+          <img alt="" src={Lake} className="rounded-2xl" />
+          <div className="flex flex-col gap-3">
+            <p className="font-normal text-[1.2vw] font-Poppins">Comment :</p>
+            <input className="w-[37vw] h-[15vh] border-2 border-black rounded-xl focus:border-sky-500" />
+            <button class="bg-Button hover:bg-ButtonHover font-[400] font-Poppins w-[5vw] h-[4vh] rounded-lg text-white">
+              Send
+            </button>
           </div>
         </div>
-
-        <div className="flex flex-col m-6  w-1/3 ">
-          
-          
-          <div>
-          <img src={Map} className="w-full h-[46vh] bg-slate-900 md:h-[34vh] md: w-[40vh]" alt="Map" />
-          <div className="xl:w-[29vw] xl:h-[8vh]  lg:h-[16vh] md:h-[16vh] xl:mt-[3vh]">
-            <div className={clsx(style.box)}> 
-            <p className="">Address :</p>
-            <input type="text" placeholder="JL.Cindelaras No.205A" name="" id="" />
-            </div>
-            <div className={clsx(style.box)}>
-            <p>Email :</p>
-            <input type="text" placeholder="info@travelaja.com" name="" id="" />
-            </div>
-            <div className={clsx(style.box)}>
-            <p>Phone :</p>
-            <input type="text" placeholder="+62 1234 432 567" name="" id="" />
-            </div>
-            </div>
-          </div>
-
-
-          <div className="flex flex-col justify-center w-[650px] xl:mt-[8vh]">
-            <div className="flex flex-row">
-              <div className="md:text-[15px]">Other Destinations</div>
-              <button className="text-Button ml-[10vw] ml-[30vw]">see all</button>
-            </div>
-            <News/>
-            <News />
-          </div>
-        </div>
+        <div></div>
       </div>
     </div>
   );
