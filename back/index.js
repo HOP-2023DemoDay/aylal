@@ -13,6 +13,10 @@ const hutulburRouter = require("./route/hutulburRoute");
 
 app.use(express.json({ limit: "25mb" }));
 app.use(express.urlencoded({ limit: "25mb", extended: true }));
+const userRouter = require("./routes/userRoute");
+const companyRouter = require("./routes/companyUserRoute");
+
+app.use(express.json());
 const corsOptions = {
   origin: "http://localhost:3000",
   credentials: true,
@@ -20,6 +24,8 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 app.use("/hutulburs", hutulburRouter);
+app.use("/users", userRouter);
+app.use("/companyusers", companyRouter);
 app.listen(port, () => {
   console.log(`server is running at localhost:${port} =====> 3000`);
 });

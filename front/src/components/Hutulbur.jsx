@@ -11,7 +11,7 @@ export const Hutulbur = () => {
   return (
     <div className="h-[188px] w-[514px] ml-[40px] rounded-[22px] shadow-md grid grid-rows-4">
       <img
-        className="h-[162px] w-[225px] mt-[1vh] ml-[11px] bg-current rounded-lg rounded-[22px] bg-repeat"
+        className="h-[162px] w-[225px] mt-[1vh] ml-[11px] rounded-lg rounded-[22px] object-cover"
         src={Img2}
         alt="img2"
       />
@@ -29,7 +29,7 @@ export const Hutulbur = () => {
           <p className={clsx(style.too, "font-normal text-DarkText")}>9 days for trip</p>
           <img
             src={Img2}
-            className="w-[22px] h-[27px] bg-DarkText ml-[3px] rounded-full"
+            className="w-[22px] h-[22px] object-cover ml-[3px] rounded-full"
             alt="img"
           />
           <p className={clsx(style.too, "font-bold text-GreenText")}>CompanyName</p>
