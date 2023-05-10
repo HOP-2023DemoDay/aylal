@@ -2,11 +2,23 @@
 
 # Name
 
-## Tbale if Contents
+# Table if Contents
 
--introduction
--project structure
--run slide content
+- introduction
+
+- project structure
+
+- run slide content
+
+## Introduction
+
+For travelers and travel companies
+
+## Project structure
+
+A website designed to make things easier for travelers and travel companies
+
+## Run slide content
 
 ### start frontend
 
@@ -21,11 +33,8 @@ nodemon i
 nodemon index.js
 
 
-### Бидний тухай:
 
-- pinecone academy-ийн сурагчдын demo day санаа
-
-### Бидний ашигласан хэлүүд:
+## The languages we used :
 
 [![JavaScript](https://skills.thijs.gg/icons?i=javascript)](#)
 [![React](https://skills.thijs.gg/icons?i=react)](#)
@@ -34,7 +43,7 @@ nodemon index.js
 [![Figma](https://skills.thijs.gg/icons?i=figma)](#)
 [![PostMan](https://skills.thijs.gg/icons?i=postman)](#)
 
-### Холбоосууд :
+### Links :
 
 + [Figma](https://www.figma.com/file/u2sjdyeaq0X5XgHp9TDEdG/Untitled?t=Kp3o7kvHBqtdxOZh-6)
 
