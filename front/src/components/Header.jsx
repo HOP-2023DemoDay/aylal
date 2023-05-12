@@ -3,14 +3,21 @@ import { Link } from "react-router-dom";
 import drop from "../img/hun.png";
 
 export const Header = () => {
+
   const [toggleDrop, setToggleDrop] = useState(false);
+
+  const style = {
+    backgroundColor: 'rgba(0, 0, 0, 0.35)',
+  };
+
   return (
     <div
+    style={style}
       className={
-        "flex flex-row items-center justify-between w-screen font-Poppins 2xl:px-[5vw] xl:px-[4vw] lg:px-[3vw] md:px-[3vw] px-[1vw] bg-black opacity-50 fixed overflow-hidden"
+        "z-10 flex flex-row items-center justify-between w-screen font-Poppins 2xl:px-[5vw] xl:px-[4vw] lg:px-[3vw] md:px-[3vw] px-[1vw] fixed overflow-hidden"
       }
     >
-      <Link to="/" className="text-[33px] font-extralight text-white">
+      <Link to="/" className={`text-[33px] font-extralight text-white ${toggleDrop === true ? "mb-[5vh]" : ""}`}>
         travelaja
       </Link>
       <div className="block">
