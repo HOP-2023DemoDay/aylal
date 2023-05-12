@@ -109,6 +109,29 @@ export const Hutulbur = () => {
                 </p>
               </div>
             </div>
+
+            <div className="w-[100%] flex justify-between">
+              <div className="w-auto flex justify-between w-[45%]">
+                <p className="f-normal text-[19px] f-Poppins text-DarkText">
+                  City:
+                </p>
+                <p className="f-normal text-[19px] f-Poppins text-DarkText">
+                  Yogyakarta, Indonesia
+                </p>
+              </div>
+              <div className="w-auto flex justify-between w-[45%]">
+                <p className="f-normal text-[19px] f-Poppins text-DarkText">
+                  Email :
+                </p>
+                <p className="f-normal text-[19px] f-Poppins text-DarkText">
+                  info@travelaja.com
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col w-[80%] h-auto gap-[3vh] justify-start items-end">
+            <News />
+            <News />
           </div>
           <div className="flex flex-col w-[80%] h-auto gap-[3vh] justify-start items-end"></div>
         </div>
