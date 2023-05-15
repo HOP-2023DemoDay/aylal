@@ -13,7 +13,7 @@ const style = {
   ImgText:"2xl:w-[30vw] sm:w-[80vw] md:w-[30vw] lg:w-[30vw] xl:w-[30vw] w-[90vw] mx-[5vw] sm:mt-[10vh] mt-[10vh] lg:mt-[-35vh] 2xl:mt-[-40vh] 2xl:ml-[60vw] xl:mt-[-40vh] xl:ml-[60vw] lg:mt-[-40vh] lg:ml-[60vw] md:mt-[-30vh] md:ml-[60vw] sm:mt-[-40vh] sm:ml-[10vw]",
   jijigTit:"text-[16px] text-GreenText font-Poppins w-screen flex justify-center font-bold ",
   TomTit:"text-3xl text-DarkText text-center font-Poppins font-bold w-screen flex justify-center font-bold",
-  Cards: " overflow-x-auto w-screen flex  mt-[5vh]",
+  Cards: "flex flex-nowrap mt-[5vh]",
   Img: "w-[90vw] mt-[10vh] mx-[5vw] sm:w-[90vw] sm:mt-[10vh] sm:mx-[5vw] md:w-[40vw] md:mt-[20vh] md:ml-[10vw] xl:w-[40vw] xl:mt-[20vh] xl:ml-[10vw] 2xl:w-[40vw] 2xl:mt-[20vh] 2xl:ml-[10vw]  lg:w-[40vw] lg:ml-[8vw] ",
 };
 
@@ -76,7 +76,15 @@ const LandingPage = () => {
       <div className="mt-[200px]">
         <p className={clsx(style.jijigTit)}>top destination</p>
         <p className={clsx(style.TomTit)}>Discover your love</p>
-        <div className={clsx(style.Cards)}>
+        <div className="w-screen overflow-x-hidden">
+          <div className={clsx(style.Cards , "animate-AnimaMarginLeft")}>
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
           <CompanyCard />
           <CompanyCard />
           <CompanyCard />
@@ -84,13 +92,21 @@ const LandingPage = () => {
           <CompanyCard />
           <CompanyCard />
         </div>
-        <div className={clsx(style.Cards)}>
+          <div className={clsx(style.Cards , "animate-AnimaMarginRight")}>
           <CompanyCard />
           <CompanyCard />
           <CompanyCard />
           <CompanyCard />
           <CompanyCard />
           <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
+        </div>
         </div>
       </div>
 
@@ -98,7 +114,8 @@ const LandingPage = () => {
         <p className={clsx(style.jijigTit)}>Testimonial</p>
         <p className={clsx(style.TomTit)}>What they say about us</p>
       </div>
-      <div className={clsx(style.Cards, "pb-[5vh]")}>
+      <div className="w-screen overflow-x-hidden">
+        <div className={clsx(style.Cards, "pb-[5vh] , animate-AnimaMarginLeft")}>
         <Hutulbur />
         <Hutulbur />
         <Hutulbur />
@@ -109,6 +126,8 @@ const LandingPage = () => {
         <Hutulbur />
         <Hutulbur />
       </div>
+      </div>
+      
     </div>
   );
 };
