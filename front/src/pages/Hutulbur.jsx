@@ -5,6 +5,11 @@ import Mountain from "../img/mountain.png";
 import { Link } from "react-router-dom";
 import Map from "../img/map.png";
 
+
+
+
+
+
 export const Hutulbur = () => {
   return (
     <div>
