@@ -8,6 +8,7 @@ import Profile from "./pages/Profile";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Sign } from "./pages/Sign";
+import { Post } from "./pages/Post";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/Hutulbur" element={<Hutulbur />}></Route>
         <Route path="/Profile" element={<Profile />}></Route>
         <Route path="/Sign" element={<Sign />}></Route>
+        <Route path="/Post" element={<Post />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
