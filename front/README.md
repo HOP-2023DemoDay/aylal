@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=60&duration=3000&pause=500&color=1CF712&background=F2FFEF00&center=true&vCenter=true&multiline=true&width=950&height=100&lines=Welcome+to+our+website+!%F0%9F%98%8A)](https://git.io/typing-svg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Name
 
-## Available Scripts
+# Table if Contents
 
-In the project directory, you can run:
+- introduction
 
-### `npm start`
+- project structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- run slide content
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Introduction
 
-### `npm test`
+For travelers and travel companies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project structure
 
-### `npm run build`
+A website designed to make things easier for travelers and travel companies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Run slide content
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### start frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm i
 
-### `npm run eject`
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### start backend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+nodemon i
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+nodemon index.js
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## The languages we used :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[![JavaScript](https://skills.thijs.gg/icons?i=javascript)](#)
+[![React](https://skills.thijs.gg/icons?i=react)](#)
+[![GitHub](https://skills.thijs.gg/icons?i=github)](#)
+[![TailWind](https://skills.thijs.gg/icons?i=tailwind)](#)
+[![Figma](https://skills.thijs.gg/icons?i=figma)](#)
+[![PostMan](https://skills.thijs.gg/icons?i=postman)](#)
 
-### Code Splitting
+### Links :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
++ [Figma](https://www.figma.com/file/u2sjdyeaq0X5XgHp9TDEdG/Untitled?t=Kp3o7kvHBqtdxOZh-6)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
