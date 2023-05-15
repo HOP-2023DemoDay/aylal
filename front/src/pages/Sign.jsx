@@ -120,7 +120,7 @@ export const Sign = () => {
       <div className="gap-[20px] flex flex-col md:mt-[15vh] sm:mt-[20vh] ml-[-25vw] 2xl:ml-[-25vw] xl:ml-[-7.5vw] lg:ml-[-20vw] md:ml-[-14vw] sm:ml-[-10vw]  ">
         <div className="flex flex-row justify-center items-center gap-[10px] mt-[20vh]  xl:w-auto xl:mt-0 2xl:w-auto 2xl:mt-0 lg:w-auto lg:mt-20vh md:w-auto md:mt-0 sm:w-auto sm:mt-0 w-[295px]">
           <button
-            className="flex flex-col gap-[8px] justify-center text-Poppins items-center"
+            className="flex flex-col gap-[8px] justify-center text-Poppins items-center ml-[15px]"
             onClick={() => setPerson(true)}
           >
             <div
@@ -156,7 +156,7 @@ export const Sign = () => {
           </button>
         </div>
         <div
-          className={`xl:w-[687px] 2xl:w-[687px] lg:w-[687px] md:w-[667px] sm:w-[647px] h-[576px] content-evenly 2xl:bg-white xl:bg-white lg:bg-white md:bg-white sm:bg-white :bg-none rounded-[24px] flex flex-col justify-start items-center w-[275px] ${
+          className={`xl:w-[687px] 2xl:w-[687px] lg:w-[687px] md:w-[667px] sm:w-[647px] h-[576px] content-evenly 2xl:bg-white xl:bg-white lg:bg-white md:bg-white sm:bg-white :bg-none rounded-[24px] flex flex-col justify-start items-center w-[275px] ml-[20px] ${
             signin === false && person === false
               ? "p-[15px] gap-0"
               : "gap-[20px] p-[30px]"
