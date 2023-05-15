@@ -4,7 +4,6 @@ import Lake from "../img/lake.png";
 import Mountain from "../img/mountain.png";
 import { Link } from "react-router-dom";
 import Map from "../img/map.png";
-import News from "../components/news"
 
 export const Hutulbur = () => {
   return (
@@ -111,10 +110,7 @@ export const Hutulbur = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-[80%] h-auto gap-[3vh] justify-start items-end">
-            <News />
-            <News />
-          </div>
+          <div className="flex flex-col w-[80%] h-auto gap-[3vh] justify-start items-end"></div>
         </div>
       </div>
     </div>
