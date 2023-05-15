@@ -129,10 +129,6 @@ export const Hutulbur = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-[80%] h-auto gap-[3vh] justify-start items-end">
-            <News />
-            <News />
-          </div>
           <div className="flex flex-col w-[80%] h-auto gap-[3vh] justify-start items-end"></div>
         </div>
       </div>
