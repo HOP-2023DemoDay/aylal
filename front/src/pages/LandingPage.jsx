@@ -39,7 +39,7 @@ const LandingPage = () => {
 
       <img src={Landing2} alt="img" className={clsx(style.Img)} />
       <div className={clsx(style.ImgText)}>
-        <p className="text-GreenText font-Poppins text-[28px] font-bold lg:text-[25px] mt-[-5vh] lg:text-[25px]">
+        <p className="text-GreenText font-Poppins text-[28px] font-bold mt-[-5vh] lg:text-[25px]">
           Travelers Point
         </p>
         <p className="font-Poppins text-[28px] font-bold lg:text-[20px]">
