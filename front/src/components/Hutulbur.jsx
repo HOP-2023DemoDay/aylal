@@ -9,9 +9,9 @@ const style = {
 
 export const Hutulbur = () => {
   return (
-    <div className="h-[188px] w-[514px] ml-[40px] rounded-[22px] shadow-md grid grid-rows-4">
+    <div className="h-[188px] w-[514px] ml-[40px] rounded-[22px] shadow-md grid grid-rows-4 z-1">
       <img
-        className="h-[162px] w-[225px] mt-[1vh] ml-[11px] rounded-lg rounded-[22px] object-cover"
+        className="h-[162px] w-[225px] mt-[1vh] ml-[11px] rounded-[22px] object-cover"
         src={Img2}
         alt="img2"
       />
