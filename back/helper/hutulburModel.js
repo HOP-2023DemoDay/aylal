@@ -7,7 +7,9 @@ const HutulburScheme = new Schema({
   email: String,
   text: String,
   image: String,
-  dataslot: String
+  image1: String,
+  image2: String,
+  // dataslot: String,
 });
 const HutulburModel = model("Hutulbur", HutulburScheme);
 module.exports = HutulburModel;

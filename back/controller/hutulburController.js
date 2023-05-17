@@ -30,8 +30,18 @@ module.exports.editHutulbur = async (req, res) => {
 
 module.exports.postHutulbur = async (req, res) => {
   try {
-    const { title, days, phone, country, email, text, image, datalost } =
-      req.body;
+    const {
+      title,
+      days,
+      phone,
+      country,
+      email,
+      text,
+      image,
+      image1,
+      image2,
+      // datalost,
+    } = req.body;
     const result = await HutulburModel.create({
       title: title,
       days: days,
@@ -40,7 +50,9 @@ module.exports.postHutulbur = async (req, res) => {
       email: email,
       text: text,
       image: image,
-      datalost: datalost,
+      image1: image1,
+      image2: image2,
+      // datalost: datalost,
     });
     return res.status(201).json({ data: result });
   } catch (error) {
