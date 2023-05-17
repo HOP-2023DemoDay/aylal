@@ -9,14 +9,14 @@ const style = {
 export const CompanyCard = () => {
   return (
     <div>
-      <div className="shadow-xl 2xl:h-[517px] xl:h-[300px] rounded-[10px] ml-[80px]">
+      <div className="shadow-xl 2xl:h-[517px] xl:h-[400px] rounded-[10px] ml-[100px]">
         <img
           className="2xl:h-[288px] xl:h-[150px] 2xl:w-[380px] xl:w-[380px] w-[310px] bg-current rounded-t-lg object-cover"
           src={Img}
           alt="img"
         />
         <p className="2xl:text-[20px] xl:text-[16px] 2xl:w-[300px] mt-[8px] xl:w-[200px] w-[280px] font-Poppins capitalize text-Black font-semibold 2xl:mx-[40px] 2xl:mt-[20px] xl:mt-[5px] xl:mt-[20px] xl:ml-[40px] ml-[30px]">
-          The Golden Sands of Florida and clifornia{" "}
+          The Golden Sands of Florida and clifornia
         </p>
         <p className="2xl:w-[300px] xl:w-[200px] w-[260px] my-[8px] ml-[30px] 2xl:text-[15px] xl:text-[12px] xl:mx-[40px] font-Poppins text-[12px] 2xl:mx-[40px] text-GrayText 2xl:my-[20px] xl:my-[5px]">
           Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et donec

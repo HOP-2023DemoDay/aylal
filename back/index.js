@@ -5,10 +5,14 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const express = require("express");
+
 const cors = require("cors");
 const port = process.env.PORT || 8000;
 const app = express();
+const hutulburRouter = require("./routes/hutulburRoute");
 
+app.use(express.json({ limit: "25mb" }));
+app.use(express.urlencoded({ limit: "25mb", extended: true }));
 const userRouter = require("./routes/userRoute");
 const companyRouter = require("./routes/companyUserRoute");
 
@@ -19,6 +23,7 @@ const corsOptions = {
   optionSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
+app.use("/hutulburs", hutulburRouter);
 app.use("/users", userRouter);
 app.use("/companyusers", companyRouter);
 app.listen(port, () => {
