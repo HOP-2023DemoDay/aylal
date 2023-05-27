@@ -2,6 +2,16 @@ import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Arrow from "../img/Vector.png";
 import axios from "axios";
+import ImgUpload from "../img/uploadImg.svg"
+import clsx from "clsx";
+
+const style = {
+  ImgDiv: "w-[40vw] border-2 border-dashed border-Button rounded-3xl flex items-center justify-center",
+  resml: "2xl:ml-[0vw] xl:ml-[0vw] lg:ml-[0vw] md:ml-[0vw] ml-[-45vw]",
+  resmt: "2xl:mt-[4vh] xl:mt-[4vh] lg:mt-[4vh] md:mt-[5vh] mt-[55vh]",
+  text: "-normal text-[19px] font-Poppins text-DarkText",
+  input: "border-[1px] rounded-lg border-black md:w-[120px] xl:w-[200px] 2xl:w-[16vw] 2xl:text-2xl w-[80px] h-[30px] ml-[1vw]",
+};
 
 export const Post = () => {
   const [selectedImage, setSelectedImage] = useState(false);
@@ -104,26 +114,29 @@ export const Post = () => {
           </div>
         </div>
       ) : (
-        <div className="w-screen h-[35vh] bg-gray-300">
+        <div className="w-screen h-[35vh] flex justify-center items-center bg-Button ">
           <input
             type="file"
-            className="text-gray-300 relative opacity-0  w-full h-full cursor-pointer"
+            className="absolute opacity-0 w-screen h-[35vh]"
             onChange={(event) => {
               console.log(event.target.files[0]);
               setSelectedImage(event.target.files[0]);
             }}
           />
-          <div className="mt-[-20vh] ml-[50vw]">img+</div>
-          <div className="bg-cover w-[100vw] h-[35vh] p-[5vw] flex flex-col gap-[2.5vw] mt-[-20vh] ">
+          <div className="bg-cover w-[10vw] flex flex-wrap gap-[2.5vw] absolute ml-[-80vw]">
             <Link to="/" className="z-20">
               <img alt="" src={Arrow} />
             </Link>
             <input
-              className="font-Poppins font-bold text-[2vw] placeholder:text-black z-[10] bg-gray-300 w-[30vw]"
+              className="font-Poppins font-bold text-[2vw] placeholder:text-black z-[10] bg-transparent border-2 border-dashed border-black"
               type="text"
               placeholder="Title"
               ref={title}
             />
+          </div>
+          <div className="flex item-center">
+            <img src={ImgUpload} alt="img"/>
+            <p className="absolute ml-[-2vw] mt-[7vh]">BrowserFileToUpload</p>
           </div>
         </div>
       )}
@@ -156,16 +169,19 @@ export const Post = () => {
               </button>
             </div>
           ) : (
-            <div className="w-[40vw] h-[20vh] bg-gray-300">
+            <div className={clsx(style.ImgDiv , "h-[23vh] 2xl:mt-[0vh] xl:mt-[0vh] lg:mt-[0vh] md:mt-[0vh] mt-[65vh]")}>
               <input
                 type="file"
-                className="text-gray-300 relative opacity-0  w-full h-full cursor-pointer"
+                className="absolute opacity-0 w-[40vw] h-[20vh] "
                 onChange={(event) => {
                   console.log(event.target.files[0]);
                   setSelectedImage1(event.target.files[0]);
                 }}
               />
-              <div className="mt-[-10vh] ml-[19vw]">img+</div>
+              <div className="flex item-center">
+                <img src={ImgUpload} alt="" />
+                <p className="absolute ml-[-2vw] mt-[7vh]">BrowserFileToUpload</p>
+              </div>
             </div>
           )}
 
@@ -185,7 +201,6 @@ export const Post = () => {
             <div className="mt-[5vh]">
               <img
                 alt="not found"
-                className="w-[50vw] h-[40vh]"
                 src={URL.createObjectURL(selectedImage2)}
               />
               <button
@@ -196,37 +211,40 @@ export const Post = () => {
               </button>
             </div>
           ) : (
-            <div className="w-[40vw] h-[40vh] bg-gray-300 mt-[7vh]">
+            <div  className={clsx(style.ImgDiv , style.resml , style.resmt , "h-[40vh]")}>
               <input
                 type="file"
-                className="text-gray-300 relative opacity-0  w-full h-full cursor-pointer"
+                className="absolute opacity-0 w-[40vw] h-[40vh] "
                 onChange={(event) => {
                   console.log(event.target.files[0]);
                   setSelectedImage2(event.target.files[0]);
                 }}
               />
-              <div className="mt-[-20vh] ml-[19vw]">img+</div>
+              <div className="flex item-center">
+                <img src={ImgUpload} alt="img"/>
+                <p className="absolute ml-[-2vw] mt-[7vh]">BrowserFileToUpload</p>
+              </div>
             </div>
           )}
 
-          <div className="flex flex-col h-auto w-[80%] gap-[7vh]">
+          <div className={clsx(style.resml , "flex flex-col h-auto w-[80%] gap-[7vh]")}>
             <div className="w-[100%] flex justify-between">
               <div className="w-auto flex justify-between w-[45%] ml-[-1vw]">
-                <p className="f-normal text-[19px] font-Poppins text-DarkText">
+                <p  className={clsx(style.text)}>
                   Days:
                 </p>
                 <input
-                  className="border-[1px] rounded-lg border-black w-[15vw] h-[3vh] ml-[1vw]"
+                  className={clsx(style.input)}
                   ref={days}
                 />
               </div>
               <div className="w-auto flex justify-between w-[45%] ml-[1vw]">
-                <p className="f-normal text-[19px] font-Poppins text-DarkText">
+                <p  className={clsx(style.text)}>
                   Phone:
                 </p>
                 <input
-                  className="border-[1px] rounded-lg border-black w-[15vw] h-[3vh] ml-[1vw]"
-                  // type="number"
+                  className={clsx(style.input)}
+                  type="number"
                   ref={phone}
                 />
               </div>
@@ -234,27 +252,26 @@ export const Post = () => {
 
             <div className="w-[100%] flex justify-between">
               <div className="w-auto flex justify-between w-[45%]">
-                <p className="f-normal text-[19px] font-Poppins text-DarkText ml-[-2vw]">
+                <p className={clsx(style.text , "ml-[-2vw]")}>
                   Country:
                 </p>
                 <input
-                  className="border-[1px] rounded-lg border-black w-[15vw] h-[3vh] ml-[1vw]"
+                  className={clsx(style.input)}
                   ref={country}
                 />
               </div>
               <div className="w-auto flex justify-between w-[45%]">
-                <p className="f-normal text-[19px] font-Poppins text-DarkText ml-[1vw]">
+                <p  className={clsx(style.text , "ml-[1vw]")}>
                   Email:
                 </p>
                 <input
-                  className="border-[1px] rounded-lg border-black w-[15vw] h-[3vh] ml-[1vw]"
+                  className={clsx(style.input)}
                   type="email"
                   ref={email}
                 />
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-[80%] h-auto gap-[3vh] justify-start items-end"></div>
         </div>
       </div>
     </div>
